@@ -1,0 +1,40 @@
+.section-services{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-services{
+  margin-bottom: 30px;
+
+}
+
+.content-services{
+  padding-top: 10px;
+}
+
+.icon-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon{
+   width: 60px;
+   height:60px;
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3{
+    padding-top: 10px;
+  }
+  p{
+    padding: 10px;
+    text-align: center;
+  }
+}

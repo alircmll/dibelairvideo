@@ -9,12 +9,18 @@ header{
 .header-section{
     height : 100vh;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
   .title-header{
     color: #E0DFD5;
-    font-family: 'Fira Sans', sans-serif;
+
+  }
+
+  .title-brand h3{
+
+    color: #E0DFD5;
+
   }
 }
