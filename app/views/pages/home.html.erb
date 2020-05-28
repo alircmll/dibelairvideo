@@ -92,6 +92,21 @@
 
 <!-- PORTFOLIO -->
 
+<section class="section-folio">
+  <h1 class="title-folio">PORTFOLIO</h1>
+  <div class="container">
+    <div class="content-folio">
+      <% @categories.each do |cat| %>
+        <%link_to category_path(cat) do %>
+          <%= cat.name %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 
