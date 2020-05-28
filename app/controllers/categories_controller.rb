@@ -7,6 +7,6 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @movies = @category.movies
+    @movies = Movie.where(category_id: params[:id].to_i)
   end
 end
