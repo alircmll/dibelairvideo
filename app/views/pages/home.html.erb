@@ -95,14 +95,13 @@
 <section class="section-folio">
   <h1 class="title-folio">PORTFOLIO</h1>
   <div class="container-folio">
-    <div class="row">
+    <div class="row gallery">
       <% @categories.each do |cat| %>
-        <div class="col-lg-4">
-          <%= link_to category_path(cat) do  %>
-            <div class="gallery-card" style="background-image: url(<%= cat.photo %>)">
-              <h3 class="gallery-title"><%= cat.name %></h3>
-            </div>
-          <% end %>
+        <div class="col-lg-4 gallery-card">
+          <div class="title-card">
+            <h3><%= cat.name %></h3>
+          </div>
+          <%= image_tag cat.photo, class: "gallery-img" %>
         </div>
       <% end %>
     </div>
@@ -113,8 +112,39 @@
 
 
 <!-- ILS M'ONT FAIT CONFIANCE -->
+<!-- <section class="section-trust"> -->
+  <div class="container-trust">
+    <h2>Our  Partners</h2>
+     <section class="customer-logos slider">
+        <div class="slide">
+          <%= image_tag('CHANFLOR.png', class:"img") %>
+        </div>
+        <div class="slide">
+          <%= image_tag('toyota.png', class:"img") %>
+        </div>
+        <div class="slide">
+         <%= image_tag('orange.png', class:"img") %>
+        </div>
+        <div class="slide">
+          <%= image_tag('Tracetv.png', class:"img") %>
+        </div>
+        <div class="slide">
+          <%= image_tag('batir.png', class:"img") %>
+        </div>
+        <div class="slide">
+          <%= image_tag('socomi.jpg', class:"img") %>
+        </div>
+        <div class="slide">
+          <%= image_tag('mrt.png', class:"img") %>
+        </div>
+        <div class="slide">
+          <%= image_tag('grant.jpg', class:"img") %>
+        </div>
+     </section>
+  </div>
 
 
+<!-- </section> -->
 
 
 
