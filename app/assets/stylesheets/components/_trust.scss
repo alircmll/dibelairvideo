@@ -1,14 +1,36 @@
 .section-trust{
   height: 100vh;
+
+  .container-trust{
+    margin: 0 auto;
+
+    .title-trust{
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    .subt-trust{
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
+  }
 }
+
+
+
+
 
 
 .slick-slide {
   margin: 0px 20px;
+
 }
 
 .slick-slide img {
-  width: 100%;
+  width: 52%;
+
 }
 
 .slick-slider{
@@ -79,7 +101,7 @@ padding: 0;
   float: right;
 }
 .slick-slide img{
-    display: block;
+  display: block;
 }
 
 .slick-slide.slick-loading img{
