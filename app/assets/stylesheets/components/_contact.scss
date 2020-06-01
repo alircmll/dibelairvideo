@@ -1,0 +1,35 @@
+
+.section-contact{
+  background-color: red;
+  height: 70vh;
+
+}
+
+.title-contact{
+  text-align: center;
+}
+
+.contact-content{
+  background-color: green;
+}
+
+.form-contact{
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row-contact{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+    .contact-item{
+      padding-bottom: 5px;
+    }
+}
+.row-text{
+  background-color: black;
+}

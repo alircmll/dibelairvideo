@@ -2,10 +2,12 @@
 
 <header>
   <section class="header-section">
-  <h1 class="title-header">RÉALISATION VIDÉO & PRODUCTION AUDIOVISUELLE</h1>
-  <div class="title-brand">
-    <h3>Dibel'air Video</h3>
-  </div>
+    <div class="title-header">
+      <h1>RÉALISATION VIDÉO & PRODUCTION AUDIOVISUELLE</h1>
+    </div>
+    <div class="title-brand">
+      <h3>Dibel'air Video</h3>
+    </div>
   </section>
 </header>
 
@@ -75,42 +77,6 @@
   </div>
 </section>
 
-
-<!-- À PROPOS  -->
-
-<section class="section-about">
-  <h1 class="title-about">Dibel'air Vidéo</h1>
-  <div class="container">
-    <!-- Ajout photo + texte -->
-    <div class="content-about">
-      <p>Réalisatrice - vidéaste freelance, mais surtout passionnée de vidéo et de tout ce qui touche à l’image, je réalise depuis plusieurs années des vidéos aussi bien pour des entreprises, des particuliers, des professions libérales etc.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde, vero autem! Labore nemo ut, commodi cupiditate odio sequi deserunt quam, aliquid repudiandae nisi natus dolore quidem voluptate dolor dolorum?</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- PORTFOLIO -->
-
-<section class="section-folio">
-  <h1 class="title-folio">PORTFOLIO</h1>
-  <div class="container-folio">
-    <div class="row gallery">
-      <% @categories.each do |cat| %>
-        <div class="col-lg-4 gallery-card">
-          <div class="title-card">
-            <h3><%= cat.name %></h3>
-          </div>
-          <%= image_tag cat.photo, class: "gallery-img" %>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</section>
-
-
-
-
 <!-- ILS M'ONT FAIT CONFIANCE -->
 <section class="section-trust">
   <div class="container-trust">
@@ -173,4 +139,98 @@
      </div>
   </div>
 </section>
+
+<!-- À PROPOS  -->
+
+<section class="section-about">
+  <h1 class="title-about">Dibel'air Vidéo</h1>
+  <div class="container">
+    <!-- Ajout photo + texte -->
+    <div class="content-about">
+      <p>Réalisatrice - vidéaste freelance, mais surtout passionnée de vidéo et de tout ce qui touche à l’image, je réalise depuis plusieurs années des vidéos aussi bien pour des entreprises, des particuliers, des professions libérales etc.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde, vero autem! Labore nemo ut, commodi cupiditate odio sequi deserunt quam, aliquid repudiandae nisi natus dolore quidem voluptate dolor dolorum?</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<section class="section-folio">
+  <h1 class="title-folio">PORTFOLIO</h1>
+  <div class="container-folio">
+    <div class="row gallery">
+      <% @categories.each do |cat| %>
+        <div class="col-lg-4 gallery-card">
+          <div class="title-card">
+            <h3><%= cat.name %></h3>
+          </div>
+          <%= image_tag cat.photo, class: "gallery-img" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+
+
+
 <!-- CONTACT -->
+
+
+
+<!-- <section class="section-contact">
+<div class="title-contact">
+  <h1>Contact</h1>
+</div>
+<div class="row contact-content">
+  <div class="col-lg-12">
+    <div class="row">
+
+      <div class="col-lg-6 form-contact">
+
+        <div class="row row-contact">
+          <div class="col-lg-3 contact-item">
+            name
+          </div>
+          <div class="col-lg-3 contact-item">
+            email
+          </div>
+          <div class="col-lg-3 contact-item">
+              objet
+          </div>
+        </div>
+
+        <div class="row row-text">
+          <div class="col-lg-3">
+            text
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6 info-contact">
+        <div class="num-contact">
+          <p>08375947393</p>
+        </div>
+        <div class="email-contact">
+          <p>dfghjk@dfghjk.com</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+ -->
+
+
+
+
+<!-- FOOTER -->
+
+<footer id="footer">
+  <div class="footer-icon">
+
+</div>
+</footer>

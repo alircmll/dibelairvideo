@@ -13,12 +13,12 @@ Category.destroy_all
 puts "ok"
 puts "creating categories"
 
-wedding = Category.create!(name: 'Mariages', photo:"https://images.unsplash.com/photo-1462733441571-9312d0b53818?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" )
-event = Category.create!(name: 'Évènements', photo: "https://images.unsplash.com/photo-1590414731158-459a3c3d98ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" )
-nature = Category.create!(name: 'Nature et Voyages', photo: "https://images.unsplash.com/photo-1590431781579-a93b90ac2bd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1009&q=80" )
-work = Category.create!(name: "Films d'entreprises", photo: "https://images.unsplash.com/photo-1590427791411-b4115212e564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" )
-clip = Category.create!(name: 'Clips Vidéos', photo: "https://images.unsplash.com/photo-1590510325281-54a9164cf0f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" )
-sport = Category.create!(name: 'Sports et Divertissements', photo: "https://images.unsplash.com/photo-1590423203582-e7f7968d8807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" )
+wedding = Category.create!(name: 'Mariages', photo:"wedding.jpg" )
+event = Category.create!(name: 'Évènements', photo: "event.jpg" )
+nature = Category.create!(name: 'Nature et Voyages', photo: "nature.jpg" )
+work = Category.create!(name: "Films d'entreprises", photo: "buisness.jpg" )
+clip = Category.create!(name: 'Clips Vidéos', photo: "clip.jpg" )
+sport = Category.create!(name: 'Sports et Divertissements', photo: "sport.jpg")
 
 
 
