@@ -15,10 +15,10 @@ puts "creating categories"
 
 wedding = Category.create!(name: 'Mariages', photo:"wedding.jpg" )
 event = Category.create!(name: 'Évènements', photo: "event.jpg" )
-nature = Category.create!(name: 'Nature et Voyages', photo: "nature.jpg" )
+nature = Category.create!(name: 'Nature & Voyages', photo: "nature.jpg" )
 work = Category.create!(name: "Films d'entreprises", photo: "buisness.jpg" )
 clip = Category.create!(name: 'Clips Vidéos', photo: "clip.jpg" )
-sport = Category.create!(name: 'Sports et Divertissements', photo: "sport.jpg")
+sport = Category.create!(name: 'Sports & Divertissements', photo: "sport.jpg")
 
 
 

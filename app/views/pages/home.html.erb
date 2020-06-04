@@ -8,12 +8,15 @@
     <div class="title-brand">
       <h3>Dibel'air Video</h3>
     </div>
+    <a href="#one">
+      <div class="scroll-down"></div>
+    </a>
   </section>
 </header>
 
 <!-- SERVICES -->
 
-<section class="section-services">
+<section id="one" class="section-services">
   <h1 class="title-services">SERVICES</h1>
   <div class="container">
     <div class="content-services">
@@ -162,9 +165,11 @@
     <div class="row gallery">
       <% @categories.each do |cat| %>
         <div class="col-lg-4 gallery-card">
-          <div class="title-card">
-            <h3><%= cat.name %></h3>
-          </div>
+          <%= link_to category_path(cat), class:"link-card" do  %>
+            <div class="title-card">
+              <h3><%= cat.name.upcase %></h3>
+            </div>
+          <% end %>
           <%= image_tag cat.photo, class: "gallery-img" %>
         </div>
       <% end %>
@@ -179,52 +184,81 @@
 
 
 
-<!-- <section class="section-contact">
+<section class="section-contact">
 <div class="title-contact">
   <h1>Contact</h1>
+  <p>Besoin d'un devis ou discuter de vos projets? N'hésitez pas à me contacter !</p>
 </div>
 <div class="row contact-content">
   <div class="col-lg-12">
     <div class="row">
-
-      <div class="col-lg-6 form-contact">
-
-        <div class="row row-contact">
-          <div class="col-lg-3 contact-item">
-            name
+      <form id="my-form" action="https://formspree.io/xqkyqqro" method="POST">
+        <div class="col-lg-8 form-contact">
+          <div class="row row-contact">
+            <div class="col-lg-2 contact-item">
+              <div class="form-group">
+                <input type="text" name="NOM" class="form-control information" placeholder="Nom/Prénom*" id="name" required="" data-validation-required-message="Veuillez entrer votre NOM s'il vous plaît">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-lg-2 contact-item">
+              <div class="form-group">
+                <input type="email" name="Email" class="form-control information" placeholder="Email*" id="email" required="" data-validation-required-message="Veuillez entrer votre EMAIL s'il vous plaît">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-lg-2 contact-item">
+              <div class="form-group">
+                <input type="text" name="Objet" class="form-control information" placeholder="Objet*" id="object" required="" data-validation-required-message="Veuillez entrer un sujet s'il vous plaît"/>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-3 contact-item">
-            email
-          </div>
-          <div class="col-lg-3 contact-item">
-              objet
+          <div class="row row-text">
+            <div class="col-lg-2">
+              <div class="form-group">
+                <textarea type="text" name="Message" class="form-control message" placeholder="Message*" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="row row-text">
-          <div class="col-lg-3">
-            text
-          </div>
+        <div class="col-lg-6 text-center btn-contact">
+          <button id="my-form-button">Envoyer</button>
+          <p id="my-form-status"></p>
         </div>
-
-      </div>
-      <div class="col-lg-6 info-contact">
+      </form>
+      <div class="col-lg-4 info-contact">
         <div class="num-contact">
-          <p>08375947393</p>
+          <%= image_tag('phone.png', class:"img-phone") %>
+          <p>0696 40 92 03</p>
         </div>
         <div class="email-contact">
-          <p>dfghjk@dfghjk.com</p>
+          <%= image_tag('email.png', class:"img-mail") %>
+          <p>dibelairvideo@gmail.com</p>
         </div>
       </div>
     </div>
-
   </div>
 </div>
 </section>
 
+<!--
+<form id="my-form" action="https://formspree.io/xqkyqqro" method="POST">
+   <label>Name</label>
+  <input type="email" name="email"/>
+   <label>Email</label>
+  <input type="email" name="email"/>
+
+  <label>Objet</label>
+  <input type="email" name="email"/>
+  <label>Message</label>
+  <input type="text" name="message"/>
+  <button id="my-form-button">Submit</button>
+  <p id="my-form-status"></p>
+</form>
+
  -->
-
-
 
 
 <!-- FOOTER -->
