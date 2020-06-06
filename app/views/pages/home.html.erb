@@ -161,19 +161,23 @@
 
 <section class="section-folio">
   <h1 class="title-folio">PORTFOLIO</h1>
-  <div class="container-folio">
-    <div class="row gallery">
-      <% @categories.each do |cat| %>
-        <div class="col-lg-4 gallery-card">
-          <%= link_to category_path(cat), class:"link-card" do  %>
-            <div class="title-card">
-              <h3><%= cat.name.upcase %></h3>
-            </div>
-          <% end %>
-          <%= image_tag cat.photo, class: "gallery-img" %>
+  <div class="options">
+    <% @categories.each do |cat| %>
+        <div class="option" style="--optionBackground:url(<%= cat.photo %>);">
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <%= image_tag('search (1).png', class:"search") %>
+             </div>
+             <div class="info">
+              <%= link_to category_path(cat), class:"link-card" do  %>
+                <div class="main"><%= cat.name %></div>
+              <% end %>
+                <div class="sub">Omuke trughte a otufta</div>
+             </div>
+          </div>
         </div>
-      <% end %>
-    </div>
+    <% end %>
   </div>
 </section>
 
@@ -185,62 +189,55 @@
 
 
 <section class="section-contact">
-<div class="title-contact">
-  <h1>Contact</h1>
-  <p>Besoin d'un devis ou discuter de vos projets? N'hésitez pas à me contacter !</p>
-</div>
-<div class="row contact-content">
-  <div class="col-lg-12">
-    <div class="row">
+  <div class="title-contact">
+    <h1>Contact</h1>
+    <p>Besoin d'un devis ou discuter de vos projets? N'hésitez pas à me contacter !</p>
+  </div>
+
+  <div class="row form-and-contact">
+    <div class="col-lg-6 form-contact">
       <form id="my-form" action="https://formspree.io/xqkyqqro" method="POST">
-        <div class="col-lg-8 form-contact">
-          <div class="row row-contact">
-            <div class="col-lg-2 contact-item">
-              <div class="form-group">
-                <input type="text" name="NOM" class="form-control information" placeholder="Nom/Prénom*" id="name" required="" data-validation-required-message="Veuillez entrer votre NOM s'il vous plaît">
-                <p class="help-block text-danger"></p>
-              </div>
+        <div class="row row-contact">
+          <div class="col-lg-6 contact-item">
+            <div class="form-group">
+              <input type="text" name="NOM" class="form-control information" placeholder="Nom/Prénom*" id="name" required="" data-validation-required-message="Veuillez entrer votre NOM s'il vous plaît">
+              <p class="help-block text-danger"></p>
             </div>
-            <div class="col-lg-2 contact-item">
-              <div class="form-group">
-                <input type="email" name="Email" class="form-control information" placeholder="Email*" id="email" required="" data-validation-required-message="Veuillez entrer votre EMAIL s'il vous plaît">
-                <p class="help-block text-danger"></p>
-              </div>
+            <div class="form-group">
+              <input type="email" name="Email" class="form-control information" placeholder="Email*" id="email" required="" data-validation-required-message="Veuillez entrer votre EMAIL s'il vous plaît">
+              <p class="help-block text-danger"></p>
             </div>
-            <div class="col-lg-2 contact-item">
-              <div class="form-group">
-                <input type="text" name="Objet" class="form-control information" placeholder="Objet*" id="object" required="" data-validation-required-message="Veuillez entrer un sujet s'il vous plaît"/>
-                <p class="help-block text-danger"></p>
-              </div>
+            <div class="form-group">
+              <input type="text" name="Objet" class="form-control information" placeholder="Objet*" id="object" required="" data-validation-required-message="Veuillez entrer un sujet s'il vous plaît"/>
+              <p class="help-block text-danger"></p>
             </div>
           </div>
-          <div class="row row-text">
-            <div class="col-lg-2">
-              <div class="form-group">
-                <textarea type="text" name="Message" class="form-control message" placeholder="Message*" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <textarea type="text" name="Message" class="form-control message" placeholder="Message*" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+              <p class="help-block text-danger"></p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 text-center btn-contact">
-          <button id="my-form-button">Envoyer</button>
+          <%= render"shared/folio" %>
+          <!-- <button id="my-form-button">Envoyer</button> -->
           <p id="my-form-status"></p>
         </div>
       </form>
-      <div class="col-lg-4 info-contact">
-        <div class="num-contact">
-          <%= image_tag('phone.png', class:"img-phone") %>
-          <p>0696 40 92 03</p>
-        </div>
-        <div class="email-contact">
-          <%= image_tag('email.png', class:"img-mail") %>
-          <p>dibelairvideo@gmail.com</p>
-        </div>
+    </div>
+
+    <div class="col-lg-4 info-contact">
+      <div class="num-contact">
+        <%= image_tag('phone.png', class:"img-phone") %>
+        <p class="number">0696 40 92 03</p>
+      </div>
+      <div class="email-contact">
+        <%= image_tag('email.png', class:"img-email") %>
+        <p class="email">dibelairvideo@gmail.com</p>
       </div>
     </div>
   </div>
-</div>
 </section>
 
 <!--

@@ -17,7 +17,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'jquery-rails'
 gem "jquery-slick-rails"
-
+gem 'compass-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

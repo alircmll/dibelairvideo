@@ -7,68 +7,52 @@
 
 .title-contact{
   text-align: center;
+  margin-bottom: 90px;
 }
 
-.contact-content{
-  margin-left: 30px;
-  margin-right: 30px;
-
-}
 
 .form-contact{
   margin: 0 auto;
-  padding: 80px;
-  display: flex;
-  justify-content: space-around;
+
 }
 .btn-contact{
   margin: 0 auto;
 }
 
-.row-contact{
-  padding-right: 60px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-    .contact-item{
-      padding-bottom: 5px;
-    }
-}
-
-.info-contact{
-  background-image: image_url('logo.png');
-}
 
 .num-contact{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-bottom: 30px;
   .img-phone{
-    width: 30px;
+    // width: 30px;
+    padding-right: 5px;
+
+  }
+  .number{
+    margin:0;
   }
 }
 .email-contact{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  .img-mail{
-    width:30px;
+  .img-email{
+    // width:30px;
+    padding-right: 5px;
+  }
+  .email{
+    margin:0;
   }
 }
 
-
-.info-contact{
-  padding: 80px;
-}
 
 
 form {
   .form-control {
     // font-weight: 900;
+    border-radius: 5px;
 
     &::placeholder {
       color: rgba(189, 190, 191, 0.9);
@@ -76,24 +60,15 @@ form {
     }
   }
 
-  .information {
-    height: 34px;
-    width: 220px;
-
-  }
-
-  .message {
-    height: 144px;
-    width: 237px;
-  }
-
-  button {
-    background: transparent;
-    border: transparent;
-    padding-bottom: 100px;
-  }
-
   p#my-form-status {
     font-weight: 900;
+    color: red;
+    font-size: 36px;
   }
 }
+
+.form-and-contact {
+  margin: 0;
+}
+
+
