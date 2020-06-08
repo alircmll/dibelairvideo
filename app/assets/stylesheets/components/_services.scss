@@ -8,12 +8,16 @@
 }
 
 .title-services{
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  background-color: #B3CCD1;
+  padding: 20px;
+  border-radius: 48%;
+
 
 }
 
 .content-services{
-  padding-top: 10px;
 }
 
 .icon-box{
@@ -31,11 +35,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h3{
-    padding-top: 10px;
-  }
-  p{
-    padding: 10px;
-    text-align: center;
-  }
+  text-align:center;
+  padding: 10px;
+  margin-bottom:40px;
+  margin-top: 40px;
+}
+
+.ps{
+  text-align: center;
+  font-style: italic;
 }

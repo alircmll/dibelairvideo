@@ -8,11 +8,30 @@
   ;
 }
 
+.container-about{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
 .title-about{
 
   margin-bottom: 30px;
 }
 
-.content-about{
- text-align: center;
+
+.about-txt{
+  margin: 0 auto;
+  text-align: center;
+  width: 67%;
+}
+
+.img-about{
+  width: 35em;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.about-img{
+  display: flex;
+  justify-content: flex-end;
 }

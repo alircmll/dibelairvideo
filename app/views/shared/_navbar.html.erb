@@ -1,8 +1,8 @@
- <nav class="navbar" role="navigation">
+<!--  <nav class="navbar" role="navigation">
     <div class="navbar-logo">
-      <%= link_to root_path, class: "navbar-brand" do %>
-        <%= image_tag 'logo.png', class: "nav-logo"%>
-      <% end %>
+      <%#= link_to root_path, class: "navbar-brand" do %>
+        <%#= image_tag 'logo.png', class: "nav-logo"%>
+      <#% end %>
     </div>
     <div class="navbar-tab">
       <ul class="list-nav">
@@ -12,8 +12,8 @@
         <li class="navlink margin-right"><a href="#" class="">Portfolio</a></li>
         <li class="navlink margin-right"><a href="#" class="">Contact</a></li>
 
-        <!-- <li class="navlink"><%#= link_to "Contact", pages_contact_path, class: "navbar-brand", class: is_active?("contact") %></li> -->
-        <!-- <li> -->
+        <li class="navlink"><%#= link_to "Contact", pages_contact_path, class: "navbar-brand", class: is_active?("contact") %></li>
+         <li> -->
         <%# if admin_signed_in? %>
           <%#= link_to destroy_admin_session_path, class: "logout", method: :delete do %>
             <!-- <button class="btn-sign-out">
@@ -22,7 +22,7 @@
           <%# end %>
         <%# else %>
         <%# end %>
-      </li>
+      <!-- </li>
       </ul>
     </div>
 
@@ -32,4 +32,30 @@
       </a>
     </div>
 
-  </nav>
+  </nav> -->
+<nav id="navMenu" class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-custom navbar-fixed-top">
+
+          <div class="navbar-header">
+            <%= link_to root_path, class: "navbar-brand" do %>
+              <%= image_tag 'logo.png', class: "nav-logo"%>
+            <% end %>
+            <!-- <a class="navbar-brand" href="#tab-es6"></a> -->
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-nav">
+              <li><a href="#tab-es6" class="effect-underline">Accueil</a></li>
+              <li><a href="#tab-profil" class="effect-underline">À propos</a></li>
+              <li><a href="#tab-services" class="effect-underline">Services</a></li>
+              <li><a href="#tab-react" class="effect-underline">Outils</a></li>
+              <!-- <li><a href="#tab-folio" class="effect-underline">Portfolio</a></li> -->
+              <li><a href="#tab-other" class="effect-underline">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-burger">
+          <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
+        <%#= image_tag 'menu (1).png', class: "open-menu"%>
+      </a>
+    </div>
+
+</nav>
