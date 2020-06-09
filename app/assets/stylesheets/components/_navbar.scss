@@ -1,477 +1,157 @@
-// .navbar {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 20px 40px;
-//   margin: 0 auto;
-//   position: fixed;
-//   z-index: 999;
-//   width: 100vw;
-//   transition:
-//       background-color 0.5s ease,
-//       padding 0.5s ease;
-
-//   .navbar-brand {
-//     margin-right: 0;
-//   }
-//   .list-nav{
-//     li{
-//       a{
-//         color: white;
-//       }
-//     }
-//   }
-
-//   @media (min-width: 541px) {
-//     .nav-logo {
-//       width: 135px;
-//       transition: width 0.5s ease;
-//     }
-
-//     &.solid-nav {
-//       background-color: rgb(255, 255, 255);
-//       color: white;
-//       padding: 5px 40px;
-//       transition:
-//         background-color 0.5s ease,
-//         padding 0.5s ease;
-
-//       .nav-logo {
-//         width: 120px;
-//         transition: width 0.5s ease;
-//       }
-
-//       .list-nav {
-//         li {
-//           a {
-//             color: black;
-//             font-size: 18px;
-//             transition: font-size 0.5s ease;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   @media (max-width: 540px) {
-//     .nav-logo {
-//       width: 80px;
-//       transition: width 0.5s ease;
-//     }
 
 
-//     &.solid-nav {
-//       background-color: rgb(255, 255, 255);
-//       color: white;
-//       // border-bottom: 3px solid white;
-//       padding: 5px 40px;
-//       transition:
-//         background-color 0.5s ease,
-//         padding 0.5s ease;
 
-//       .nav-logo {
-//         width: 65px;
-//         transition: width 0.5s ease;
-//       }
+// MENU BURGER
 
-//       .list-nav {
-//         li {
-//           a {
-//             color: black;
-//             font-size: 18px;
-//             transition: font-size 0.5s ease;
-//           }
-//         }
-//       }
-//     }
-//   }
+#modalNavigation {
+  background-color: rgb(255, 255, 255); // BG DU MENU
 
-//   @media (max-width: 320px) {
-//     .nav-logo {
-//       width: 60px;
-//     }
+  .logo {
+    letter-spacing: 10px;
+  }
 
-//     &.solid-nav {
-//       background-color: rgb(255, 255, 255);
-//       color: white;
-//       // border-bottom: 3px solid white;
-//       padding: 5px 40px;
-//       transition:
-//         background-color 0.5s ease,
-//         padding 0.5s ease;
+  .logo-modal img {
+    transition: all 0.26s ease;
+    padding-bottom: 1rem;
+  }
 
-//       .nav-logo {
-//         width: 50px;
-//         transition: width 0.5s ease;
-//       }
-
-//       .list-nav {
-//         li {
-//           a {
-//             color: black;
-//             font-size: 18px;
-
-//             transition: font-size 0.5s ease;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-
-//   .list-nav {
-//     list-style: none;
-//     margin-left: 0;
-//     padding-left: 0;
-//     margin-top: 15px;
-
-//     li {
-//       display: inline;
-
-//       button.btn-sign-out {
-//         background-color: transparent;
-//         border: none;
-//         margin-left: 3rem;
-//         outline: none;
-
-//         img.nav-logout {
-//           width: 30px;
-//         }
-//       }
-
-//       &.margin-right {
-//         margin-right: 3rem;
-//       }
-
-//       a:not(.logout) {
-//         text-decoration: none;
-//         // color: white;
-//         position: relative;
-//         font-size: 20px;
-//         font-weight: 400;
-//         font-family: 'Fira Sans', sans-serif ;
-//         transition: font-weight 0.4s ease 0s;
-//         transition: font-size 0.5s ease;
-
-//         &:hover {
-//           font-weight: bold;
-//           transition: font-weight 0.4s ease 0s;
-//         }
-
-
-//         &:after {
-//           background: none repeat scroll 0 0 transparent;
-//           bottom: 0;
-//           content: "";
-//           display: block;
-//           height: 3px;
-//           top: 25px;
-//           left: -10%;
-//           position: absolute;
-//           background: #eee;
-//           transition: width 0.4s ease 0s;
-//           // transform: rotate(-1deg);
-//           width: 0%;
-//         }
-
-//         &:hover:after {
-//           width: 120%;
-//           left: -10%;
-//           top: 25px;
-//         }
-
-//         &.active {
-//           font-weight: bold;
-//           font-size: 24px;
-
-//           &:after {
-//           background: none repeat scroll 0 0 transparent;
-//           bottom: 0;
-//           content: "";
-//           display: block;
-//           height: 4px;
-//           top: 30px;
-//           left: -10%;
-//           position: absolute;
-//           background: #54BCB6;
-//           transform: rotate(-3deg);
-//           width: 120%;
-//         }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-// @media (max-width: 769px) {
-//   .list-nav {
-//     display: none;
-//   }
-// }
-
-
-// // MENU BURGER
-
-// #modalNavigation {
-//   background-color: rgb(255, 255, 255); // BG DU MENU
-
-//   .logo {
-//     letter-spacing: 10px;
-//   }
-
-//   .logo-modal img {
-//     transition: all 0.26s ease;
-//     padding-bottom: 1rem;
-//   }
-
-//   .list-group-item {
-//     border: transparent 0 solid;
-//     background-color: transparent;
-//   }
-
-//   // MENU W/ ICONS FOR PROFIL / LOGOUT
-//   li.footer-menu {
-//     margin: 0px;
-
-//     a {
-//       img.social-icon {
-//         width: 59%;
-//       }
-//     }
-//   }
-
-//   // SEPARATION
-//   hr.top {
-//     border: 1px #54BCB6 solid;
-//     width: 100%;
-//   }
-
-//   hr.bottom {
-//     border: 1px #54BCB6 solid;
-//     width: 100%;
-//   }
-
-//   // EFFET UNDERLINE MENU HOVER
-//   span {
-//     position: relative;
-
-//     &::before {
-//       content: '';
-//       position: absolute;
-//       left: 50%;
-//       bottom: 0;
-//       width: 100%;
-//       height: 2px;
-//       // background-color: #235a64;
-//       transform-origin: center;
-//       // transform: translate(-50%, 0) scaleX(0);
-//       transition: transform 0.3s ease-in-out;
-//     }
-
-//     &:hover::before {
-//       // transform: translate(-50%, 0) scaleX(1);
-//     }
-
-//   }
-
-//   .close {
-//     color: white;
-//     opacity: 1;
-//     padding: 3.5rem;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     z-index: 50;
-//     font-size: 3vh;
-//   }
-
-//   .modal-dialog {
-//     margin: 0 auto;
-//     max-width: 300px;
-//     min-width: 40vw;
-//     display: flex;
-//     height: 100%;
-//     align-items: center;
-//   }
-
-//   .modal-content {
-//     background-color: transparent;
-//     box-shadow: none;
-//     border: none;
-//   }
-
-//   #menuModal.list-group {
-//     text-align: left;
-//     margin: 0 auto;
-//     width: 100%;
-
-//     .menu-item {
-//       font-size: 16px;
-//       font-weight: bold;
-//       font-family: "Roboto", sans-serif;
-//       line-height: 1em;
-//     }
-
-//     // COULEURS MENU
-//     a {
-//       font-weight: 300;
-//       letter-spacing: 0em;
-//       transition: all 300ms ease;
-//       // line-height: 0px;
-//       text-decoration: none;
-//       color: white;
-
-//       &:hover {
-//         color: white;
-//         transition: ease 300ms;
-
-//         &:before {
-//           opacity: 1;
-//           transition: ease 300ms;
-//         }
-//       }
-
-//       &.active {
-//         font-weight: bold;
-//         font-size: 20px;
-//         // color: #EC6B1B;
-//       }
-//     }
-//   }
-// }
+  .list-group-item {
+    border: transparent 0 solid;
+    background-color: transparent;
+  }
+}
 
 // // MENU DOTS
 
-// $pix-size: 6px; // <---- Definir la taille du menu
+$pix-size: 6px; // <---- Definir la taille du menu
 
-// @media (min-width: 769px) {
-//   .menu-burger {
-//     display: none
-//   }
-// }
+@media (min-width: 769px) {
+  .menu-burger {
+    display: none
+  }
+}
 
-// @media (min-width: 767px) {
-//   #dotsMenu {
-//     display: none;
-//     cursor: pointer;
-//     font-size: 20px;
-//     width: 76px;
-//     height: 51px;
-//     padding: 0;
-//     top: 3px;
-//     right: -9px;
+@media (min-width: 767px) {
+  #dotsMenu {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 76px;
+    height: 51px;
+    padding: 0;
+    top: 3px;
+    right: -9px;
 
-//     img.open-menu {
-//       width: 42px;
-//     }
-//   }
-// }
+    // img.open-menu {
+    //   width: 42px;
+    // }
+  }
+}
 
-// @media (max-width: 767px) {
-//   #dotsMenu {
-//     display: none;
-//     cursor: pointer;
-//     font-size: 20px;
-//     width: 76px;
-//     height: 51px;
-//     padding: 0;
-//     top: 7px;
-//     right: -9px;
+@media (max-width: 767px) {
+  #dotsMenu {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 76px;
+    height: 51px;
+    padding: 0;
+    top: 7px;
+    right: -9px;
 
-//     img.open-menu {
-//       width: 32px;
-//     }
-//   }
-// }
+    img.open-menu {
+      width: 32px;
+    }
+  }
+}
 
-// @media only screen and (max-width: 768px) {
-//   #dotsMenu {
-//     display: block;
-//   }
-// }
+@media only screen and (max-width: 768px) {
+  #dotsMenu {
+    display: block;
+  }
+}
 
-// @media (max-width: 768px) {
-//   a.logout {
-//     position: fixed;
-//     width: 76px;
-//     height: 51px;
-//     padding: 0;
-//     top: 41px;
-//     left: 31px;
+@media (max-width: 768px) {
+  // a.logout {
+  //   position: fixed;
+  //   width: 76px;
+  //   height: 51px;
+  //   padding: 0;
+  //   top: 41px;
+  //   left: 31px;
 
-//     button.btn-sign-out {
-//       img.nav-logout {
-//         width: 45px;
-//       }
-//     }
-//   }
+  //   button.btn-sign-out {
+  //     img.nav-logout {
+  //       width: 45px;
+  //     }
+  //   }
+  // }
 
-//   #dotsMenuClose {
-//     position: fixed;
-//     width: 76px;
-//     height: 51px;
-//     padding: 0;
-//     top: 42px;
-//     right: 31px;
-
-
-//     img.close-menu {
-//       width: 42px;
-//     }
-//   }
-// }
-
-// @media (max-width: 321px) {
-//   a.logout {
-//     position: fixed;
-//     width: 76px;
-//     height: 51px;
-//     padding: 0;
-//     top: 13px;
-//     left: 31px;
-
-//     button.btn-sign-out {
-//       img.nav-logout {
-//         width: 34px;
-//       }
-//     }
-//   }
-
-//   #dotsMenuClose {
-//     position: fixed;
-//     width: 76px;
-//     height: 51px;
-//     padding: 0;
-//     top: 15px;
-//     right: 31px;
+  #dotsMenuClose {
+    position: fixed;
+    width: 76px;
+    height: 51px;
+    padding: 0;
+    top: 42px;
+    right: 31px;
 
 
-//     img.close-menu {
-//       width: 32px;
-//     }
-//   }
-// }
+    img.close-menu {
+      width: 42px;
+    }
+  }
+}
 
-// .menu {
-//   position: relative;
-//   display: block;
-//   width: ($pix-size*7);
-//   height: ($pix-size*7);
-//   z-index: 1000;
-//   top: -3px;
+@media (max-width: 321px) {
+  // a.logout {
+  //   position: fixed;
+  //   width: 76px;
+  //   height: 51px;
+  //   padding: 0;
+  //   top: 13px;
+  //   left: 31px;
+
+  //   button.btn-sign-out {
+  //     img.nav-logout {
+  //       width: 34px;
+  //     }
+  //   }
+  // }
+
+  #dotsMenuClose {
+    position: fixed;
+    width: 76px;
+    height: 51px;
+    padding: 0;
+    top: 15px;
+    right: 31px;
 
 
-//   a {
-//     margin: 0;
-//     padding: 0;
+    img.close-menu {
+      width: 32px;
+    }
+  }
+}
 
-//   }
-// }
+.menu {
+  position: relative;
+  display: block;
+  width: ($pix-size*7);
+  height: ($pix-size*7);
+  z-index: 1000;
+  top: -3px;
 
-// #dotsMenu .pix {
-//   display: block;
-// }
+
+  a {
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+#dotsMenu .pix {
+  display: block;
+}
 
 
 
@@ -493,7 +173,7 @@
 }
 
 .nav-logo{
-  width: 80px;
+  width: 100px;
 }
 
 .navbar-fixed-top {
