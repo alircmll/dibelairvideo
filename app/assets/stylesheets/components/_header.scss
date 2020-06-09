@@ -14,19 +14,17 @@ header{
     justify-content: center;
     align-items: center;
 
-
   .title-header{
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     color: #E0DFD5;
     text-align: center;
+    text-shadow: 5px 3px 8px black;
+
   }
 
   .title-brand h2{
-
     color: #E0DFD5;
+    text-shadow: 5px 3px 8px black;
+    text-transform: uppercase;
 
   }
 }

@@ -1,6 +1,4 @@
 
-
-
 // MENU BURGER
 
 #modalNavigation {
@@ -72,21 +70,6 @@ $pix-size: 6px; // <---- Definir la taille du menu
 }
 
 @media (max-width: 768px) {
-  // a.logout {
-  //   position: fixed;
-  //   width: 76px;
-  //   height: 51px;
-  //   padding: 0;
-  //   top: 41px;
-  //   left: 31px;
-
-  //   button.btn-sign-out {
-  //     img.nav-logout {
-  //       width: 45px;
-  //     }
-  //   }
-  // }
-
   #dotsMenuClose {
     position: fixed;
     width: 76px;
@@ -103,20 +86,6 @@ $pix-size: 6px; // <---- Definir la taille du menu
 }
 
 @media (max-width: 321px) {
-  // a.logout {
-  //   position: fixed;
-  //   width: 76px;
-  //   height: 51px;
-  //   padding: 0;
-  //   top: 13px;
-  //   left: 31px;
-
-  //   button.btn-sign-out {
-  //     img.nav-logout {
-  //       width: 34px;
-  //     }
-  //   }
-  // }
 
   #dotsMenuClose {
     position: fixed;
@@ -188,28 +157,15 @@ $pix-size: 6px; // <---- Definir la taille du menu
 
 
 .navbar-custom .navbar-brand {
-  // font-family: 'Montserrat', sans-serif;
-  // font-weight: bold;
-  // color: #FFF;
   margin-top: 0;
 
 }
 
 .navbar-brand {
-  // float: left;
-  // padding: 5px 50px;
-  // font-size: 18px;
-  // line-height: 20px;
-
 
   &:hover  {
     // color: #6f1f13 !important;
     // color: black !important;
-  }
-  .img-brand{
-    width: 40%;
-    margin-top: 8%;
-
   }
 }
 
@@ -231,13 +187,13 @@ $pix-size: 6px; // <---- Definir la taille du menu
       margin: 0 0 0 30px;
       font-size: 12px;
       color: white;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Fira Sans', sans-serif;
       text-decoration: none;
       position: relative;
 
       &:hover{
         // color: #6f1f13;
-        color: black;
+        color: white;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
       }
 
@@ -300,14 +256,20 @@ a.effect-underline:hover:after {
 
   &.solid-nav {
     background-color: #f5f5f5;
-    border-bottom: 1px solid #91999d;
+    // border-bottom: 1px solid #91999d;
     padding: 5px 50px;
     transition:
       background-color 0.5s ease,
       padding 0.5s ease;
         a.navbar-brand{
-          display: none;
+          background-color: #e83f7c;
+          box-shadow: 2px 0px 8px 0px darkgrey;
+          transition: all 1s ease;
 
+          .nav-logo{
+            width: 155px;
+            transition: all 1s ease;
+          }
         }
       li {
           a{
