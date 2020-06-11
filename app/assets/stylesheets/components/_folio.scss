@@ -1,10 +1,16 @@
 .section-folio {
-  padding-top: 100px;
-
+  padding-top: 70px;
+  // background-color: #A41348;
+  background-image: url('data:image/jpeg;base64,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');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
   .title-folio{
     text-align: center;
     padding-bottom: 30px;
     padding-top: 30px;
+    margin:0;
+    color:white;
   }
 }
 
@@ -22,6 +28,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
   max-width:900px;
   width:calc(100% - 100px);
   height:400px;
+  padding-bottom: 100px;
 
   @for $i from 1 through 4 {
      @media screen and (max-width:798px - $i*80) {
@@ -64,6 +71,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       .label {
         bottom:20px;
         left:20px;
+
         .info >div {
           left:0px;
           opacity:1;
@@ -81,8 +89,9 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       }
 
       .label {
-        bottom:10px;
-        left:10px;
+        // bottom:10px;
+        // left:10px;
+        display:none;
 
         .info >div {
           left:20px;

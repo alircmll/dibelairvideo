@@ -1,26 +1,64 @@
 
 <nav id="navMenu" class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-custom navbar-fixed-top">
 
-          <div class="navbar-header">
-            <%= link_to root_path, class: "navbar-brand" do %>
-              <%= image_tag 'logo-blanc.png', class: "nav-logo"%>
-            <% end %>
-          </div>
+  <div class="navbar-header">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag 'logo-blanc.png', class: "nav-logo"%>
+    <% end %>
+  </div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="list-nav">
-              <li><a href="#tab-es6" class="effect-underline">Accueil</a></li>
-              <li><a href="#tab-services" class="effect-underline">Services</a></li>
-              <li><a href="#tab-profil" class="effect-underline">À propos</a></li>
-              <!-- <li><a href="#tab-react" class="effect-underline">Outils</a></li> -->
-              <li><a href="#tab-folio" class="effect-underline">Portfolio</a></li>
-              <li><a href="#tab-other" class="effect-underline">Contact</a></li>
-            </ul>
-          </div>
-          <div class="menu-burger">
-          <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
-        <%#= image_tag 'menu (1).png', class: "open-menu"%>
-      </a>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="list-nav">
+      <li><a href="#tab-es6" class="effect-underline">Accueil</a></li>
+      <li><a href="#tab-services" class="effect-underline">Services</a></li>
+      <li><a href="#tab-profil" class="effect-underline">À propos</a></li>
+      <!-- <li><a href="#tab-react" class="effect-underline">Outils</a></li> -->
+      <li><a href="#tab-folio" class="effect-underline">Portfolio</a></li>
+      <li><a href="#tab-other" class="effect-underline">Contact</a></li>
+    </ul>
+  </div>
 
+  <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
+    <%= image_tag 'menu.png', class: "open-menu"%>
+  </a>
 </nav>
+
+<div class="modal fade" id="modalNavigation" role="dialog"  aria-hidden="true">
+  <%# BUTTON CLOSE %>
+  <a id="dotsMenuClose" class="btn menu active" data-target="#modalNavigation" data-toggle="modal" aria-label="Close" class="close" data-dismiss="modal">
+    <%= image_tag 'quit.png', class: "close-menu"%>
+  </a>
+
+
+  <%# MODAL %>
+  <div class="modal-dialog">
+    <div class="modal-content" role="document">
+
+      <ul id="menuModal" class="list-group text-center">
+        <%# LIST %>
+
+        <hr class="top">
+
+            <%#= link_to "Accueil", root_path, class: "nav-link list-group-item menu-item", class: is_active?("home") %>
+            <%#= link_to "Formations", formations_path, class: "nav-link list-group-item menu-item", class: is_active?("formations") %>
+            <%#= link_to "Le Blog", articles_path, class: "nav-link list-group-item menu-item", class: is_active?("articles") %>
+            <%#= link_to "À propos", pages_about_path, class: "nav-link list-group-item menu-item", class: is_active?("about") %>
+            <%#= link_to "Contact", pages_contact_path, class: "nav-link list-group-item menu-item", class: is_active?("contact") %>
+
+
+        <%# MENU PROFIL / LOG OUT START %>
+        <hr class="bottom">
+
+        <li class="footer-menu list-inline ">
+          <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/Wkerautret/" target="_blank"><%#= image_tag 'icone-facebook.png', class: "social-icon"%></a>
+              <a href="https://www.youtube.com/channel/UC2c_l9vLefW82NbaUeqy6dA/featured" target="_blank"><%#= image_tag 'icone-youtube.png', class: "social-icon"%></a>
+              <a href="https://www.instagram.com/will_le_mono/" target="_blank"><%#= image_tag 'icone-instagram.png', class: "social-icon"%></a>
+          </div>
+        </li>
+        <%# MENU PROFIL / LOG OUT END %>
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 <!-- HEADER -->
 
 <header>
+  <%= render 'shared/navbar' %>
   <section class="header-section">
     <div class="title-header">
       <h1>RÉALISATION VIDÉO & PRODUCTION AUDIOVISUELLE</h1>
@@ -146,30 +147,6 @@
   </div>
 </section>
 
-<!-- À PROPOS  -->
-
-<section class="section-about">
-  <h1 class="title-about">À PROPOS</h1>
-  <div class="container-about">
-    <!-- Ajout photo + texte -->
-    <div class="row row-about">
-      <div class="col-12 col-md-6">
-        <div class="about-txt">
-          <!-- <p>Réalisatrice - vidéaste freelance, mais surtout passionnée de vidéo et de tout ce qui touche à l’image, je réalise depuis plusieurs années des vidéos aussi bien pour des entreprises, des particuliers, des professions libérales etc.</p> -->
-          <p>Dibel’air vidéo est là société de production vidéo sur-mesure en Martinique et dans le monde entier.
-            Nous avons commencé à produire des films pour nos propres médias avec l’ambition de créer de l’audience et de l’engagement. Aujourd’hui, nous mettons cette expertise au service des professionnels et des particuliers pour que leurs contenus soient plus consommés et partagés.
-            Nous vous proposons une large gamme de services de réalisations événementiel, Évolution de chantier Mariages Immobilier Films institutionnels Prises de vues aériennes Et beaucoup d’autres... </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 text-center">
-        <div class="about-img">
-           <%= image_tag('zoom.png', class:"img-about") %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <!-- PORTFOLIO -->
 
@@ -180,9 +157,9 @@
         <div class="option" style="--optionBackground:url(<%= cat.photo %>);">
           <div class="shadow"></div>
           <div class="label">
-            <div class="icon">
-              <%= image_tag('search (1).png', class:"search") %>
-             </div>
+            <!-- <div class="icon">
+              <%#= image_tag('search (1).png', class:"search") %>
+             </div> -->
              <div class="info">
               <%= link_to category_path(cat), class:"link-card" do  %>
                 <div class="main"><%= cat.name %></div>
@@ -194,6 +171,33 @@
     <% end %>
   </div>
 </section>
+
+<!-- À PROPOS  -->
+
+<section class="section-about">
+  <h1 class="title-about">À PROPOS</h1>
+  <div class="container-about">
+    <!-- Ajout photo + texte -->
+    <div class="row row-about">
+      <div class="col-12 col-md-6">
+        <div class="about-txt">
+          <p>Réalisatrice - vidéaste freelance, mais surtout passionnée de vidéo et de tout ce qui touche à l’image, je réalise depuis plusieurs années des vidéos aussi bien pour des entreprises, des particuliers, des professions libérales etc.</p>
+          <p>Dibel’air vidéo est là société de production vidéo sur-mesure en Martinique et dans le monde entier.
+            Nous avons commencé à produire des films pour nos propres médias avec l’ambition de créer de l’audience et de l’engagement. Aujourd’hui, nous mettons cette expertise au service des professionnels et des particuliers pour que leurs contenus soient plus consommés et partagés.
+            Nous vous proposons une large gamme de services de réalisations événementiel, Évolution de chantier Mariages Immobilier Films institutionnels Prises de vues aériennes Et beaucoup d’autres... </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-center col-about">
+        <div class="about-img">
+           <%= image_tag('zoom.png', class:"img-about") %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 

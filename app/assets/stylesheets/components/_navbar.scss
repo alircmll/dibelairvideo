@@ -19,6 +19,7 @@
   }
 }
 
+
 // // MENU DOTS
 
 $pix-size: 6px; // <---- Definir la taille du menu
@@ -37,12 +38,12 @@ $pix-size: 6px; // <---- Definir la taille du menu
     width: 76px;
     height: 51px;
     padding: 0;
-    top: 3px;
+    top: -3px;
     right: -9px;
 
-    // img.open-menu {
-    //   width: 42px;
-    // }
+    img.open-menu {
+      width: 42px;
+    }
   }
 }
 
@@ -123,6 +124,96 @@ $pix-size: 6px; // <---- Definir la taille du menu
 }
 
 
+// MENU W/ ICONS FOR PROFIL / LOGOUT
+li.footer-menu {
+  margin: 0px;
+
+  a {
+    img.social-icon {
+      width: 59%;
+    }
+  }
+}
+
+
+// SEPARATION
+hr.top {
+  border: 1px #54BCB6 solid;
+  width: 100%;
+}
+
+hr.bottom {
+  border: 1px #54BCB6 solid;
+  width: 100%;
+}
+
+
+
+.close {
+  color: white;
+  opacity: 1;
+  padding: 3.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  font-size: 3vh;
+}
+
+.modal-dialog {
+  margin: 0 auto;
+  max-width: 300px;
+  min-width: 40vw;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#menuModal.list-group {
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
+
+  .menu-item {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    line-height: 1em;
+  }
+
+  // COULEURS MENU
+  a {
+    font-weight: 300;
+    letter-spacing: 0em;
+    transition: all 300ms ease;
+    // line-height: 0px;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: white;
+      transition: ease 300ms;
+
+      &:before {
+        opacity: 1;
+        transition: ease 300ms;
+      }
+    }
+
+    &.active {
+      font-weight: bold;
+      font-size: 20px;
+      // color: #EC6B1B;
+    }
+  }
+}
+
 
 // NAV ALICE
 
@@ -130,6 +221,7 @@ $pix-size: 6px; // <---- Definir la taille du menu
 
 .navbar {
   width: 100vw;
+
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -142,7 +234,7 @@ $pix-size: 6px; // <---- Definir la taille du menu
 }
 
 .nav-logo{
-  width: 100px;
+  width: 200px;
 }
 
 .navbar-fixed-top {
@@ -196,19 +288,6 @@ $pix-size: 6px; // <---- Definir la taille du menu
         color: white;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
       }
-
-      // &:after {
-      //   background: none repeat scroll 0 0 transparent;
-      //   bottom: 0;
-      //   content: "";
-      //   display: block;
-      //   height: 2px;
-      //   left: 50%;
-      //   position: absolute;
-      //   background: #fff;
-      //   width: 0;
-      //   margin-bottom: -5px;
-      // }
     }
   }
 }
@@ -220,9 +299,10 @@ a.effect-underline:after {
   left: 0;
   display: inline-block;
   height: 1em;
+  color: #e83f7c;
   width: 100%;
-  border-bottom: 1px solid;
-  margin-top: 10px;
+  border-bottom: 2px solid;
+  margin-top: 12px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -255,37 +335,33 @@ a.effect-underline:hover:after {
 
 
   &.solid-nav {
-    background-color: #f5f5f5;
-    // border-bottom: 1px solid #91999d;
+    background-color: #2b2b2b;
     padding: 5px 50px;
-    transition:
-      background-color 0.5s ease,
-      padding 0.5s ease;
-        a.navbar-brand{
-          background-color: #e83f7c;
-          box-shadow: 2px 0px 8px 0px darkgrey;
+    transition: background-color 0.5s ease, padding 0.5s ease;
+      a.navbar-brand{
+        background-color: #e83f7c;
+        box-shadow: 8px 6px 9px 0px #201E1D;
+        transition: all 1s ease;
+
+        .nav-logo{
+          width: 115px;
           transition: all 1s ease;
-
-          .nav-logo{
-            width: 155px;
-            transition: all 1s ease;
-          }
-        }
-      li {
-          a{
-          color: black;
-
-          &:hover{
-//  ADD HOVER ON NAV LIST ITEM WHEN SOLID <<<<-----------
-          }
         }
       }
+    li {
+        a{
+        color: white;
+
+        &:hover{
+        }
+      }
+    }
   }
 }
 
 
-.menu-burger{
-  position: absolute;
-}
+// .menu-burger{
+//   position: absolute;
+// }
 
 
