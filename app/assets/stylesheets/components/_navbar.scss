@@ -188,30 +188,30 @@ hr.bottom {
   }
 
   // COULEURS MENU
-  a {
-    font-weight: 300;
-    letter-spacing: 0em;
-    transition: all 300ms ease;
-    // line-height: 0px;
-    text-decoration: none;
-    color: white;
+  // a {
+  //   font-weight: 300;
+  //   letter-spacing: 0em;
+  //   transition: all 300ms ease;
+  //   // line-height: 0px;
+  //   text-decoration: none;
+  //   color: white;
 
-    &:hover {
-      color: white;
-      transition: ease 300ms;
+  //   &:hover {
+  //     color: white;
+  //     transition: ease 300ms;
 
-      &:before {
-        opacity: 1;
-        transition: ease 300ms;
-      }
-    }
+  //     &:before {
+  //       opacity: 1;
+  //       transition: ease 300ms;
+  //     }
+  //   }
 
-    &.active {
-      font-weight: bold;
-      font-size: 20px;
-      // color: #EC6B1B;
-    }
-  }
+  //   &.active {
+  //     font-weight: bold;
+  //     font-size: 20px;
+  //     // color: #EC6B1B;
+  //   }
+  // }
 }
 
 
@@ -339,6 +339,7 @@ a.effect-underline:hover:after {
 
   .navbar-details{
     img.nav-email{
+      width: 230px;
       transition: all 1s ease;
 
     }
@@ -347,7 +348,6 @@ a.effect-underline:hover:after {
 
   &.solid-nav {
     background-color: #fff;
-    // ou #4c4c4c ??
     padding: 5px 50px;
     height: 100px;
     box-shadow: 1px 2px 11px;
@@ -360,8 +360,6 @@ a.effect-underline:hover:after {
         }
       }
       a.navbar-brand{
-        // background-color: #e83f7c;
-        // box-shadow: 8px 6px 9px 0px #201E1D;
         padding-top: 10px;
         transition: all 1s ease;
 
@@ -381,10 +379,5 @@ a.effect-underline:hover:after {
     }
   }
 }
-
-
-// .menu-burger{
-//   position: absolute;
-// }
 
 

@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #faddd1;
 }
 
 .container-about{
@@ -26,6 +27,10 @@
   margin: 0 auto;
   text-align: center;
   width: 67%;
+
+  p.p-contact{
+    font-size: 20px;
+  }
 }
 
 .img-about{
