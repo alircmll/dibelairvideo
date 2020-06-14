@@ -219,11 +219,6 @@ hr.bottom {
 
 
 
-.navbar {
-  width: 100vw;
-
-}
-
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -234,7 +229,7 @@ hr.bottom {
 }
 
 .nav-logo{
-  width: 200px;
+  width: 220px;
 }
 
 .navbar-fixed-top {
@@ -254,6 +249,10 @@ hr.bottom {
 }
 
 .navbar-brand {
+  // background-color: #e83f7c;
+  margin: 0;
+  padding: 0;
+
 
   &:hover  {
     // color: #6f1f13 !important;
@@ -278,14 +277,14 @@ hr.bottom {
     a {
       margin: 0 0 0 30px;
       font-size: 12px;
-      color: white;
+      color: black;
       font-family: 'Fira Sans', sans-serif;
       text-decoration: none;
       position: relative;
 
       &:hover{
         // color: #6f1f13;
-        color: white;
+        // color: white;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
       }
     }
@@ -322,25 +321,48 @@ a.effect-underline:hover:after {
   background: none;
   border-radius: 0;
   border: 0;
-  padding: 20px 50px;
+  padding: 10px 50px;
   transition:
   padding 0.5s ease;
   text-transform: uppercase;
-  height: 55px;
+  height: 180px;
+  width: 100vw;
+  background-color: white;
   border: none;
   z-index: 100;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: background-color 1s ease 0s;
+  transition: background-color 1s ease, padding 1s ease;
+  transition: height 1s ease;
+
+
+  .navbar-details{
+    img.nav-email{
+      transition: all 1s ease;
+
+    }
+  }
 
 
   &.solid-nav {
-    background-color: #2b2b2b;
+    background-color: #fff;
+    // ou #4c4c4c ??
     padding: 5px 50px;
-    transition: background-color 0.5s ease, padding 0.5s ease;
+    height: 100px;
+    box-shadow: 1px 2px 11px;
+    transition: background-color 1s ease, padding 1s ease;
+    transition: height 1s ease;
+
+      .navbar-details{
+        img.nav-email{
+          display: none;
+        }
+      }
       a.navbar-brand{
-        background-color: #e83f7c;
-        box-shadow: 8px 6px 9px 0px #201E1D;
+        // background-color: #e83f7c;
+        // box-shadow: 8px 6px 9px 0px #201E1D;
+        padding-top: 10px;
         transition: all 1s ease;
 
         .nav-logo{
@@ -350,9 +372,10 @@ a.effect-underline:hover:after {
       }
     li {
         a{
-        color: white;
+        color: black;
 
         &:hover{
+          color: #e83f7c;
         }
       }
     }
