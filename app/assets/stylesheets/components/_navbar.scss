@@ -276,9 +276,9 @@ hr.bottom {
 
     a {
       margin: 0 0 0 30px;
-      font-size: 12px;
+      font-size: 16px;
       color: black;
-      // font-family: 'Fira Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       text-decoration: none;
       position: relative;
 
@@ -371,6 +371,7 @@ a.effect-underline:hover:after {
     li {
         a{
         color: black;
+        font-size: 12px;
 
         &:hover{
           color: #e83f7c;

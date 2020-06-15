@@ -32,10 +32,14 @@
 
       .col-serve{
         border-bottom: 2px solid #e83f7c;
+        transition: all 1s ease;
       }
+
       .col-serve-btm{
-         padding-top: 20px;
+        padding-top: 20px;
+        transition: all 1s ease;
       }
+
       .line{
         border-left: 2px solid #e83f7c;
       }
@@ -69,3 +73,16 @@
     }
   }
 }
+
+
+// .col-serve:hover{
+//   background-color: #444444;
+//   color:white;
+//   transition: all 1s ease;
+// }
+
+// .col-serve-btm:hover{
+//   background-color: #444444;
+//   color: white;
+//   transition: all 1s ease;
+// }
