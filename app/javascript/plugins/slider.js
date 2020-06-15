@@ -1,5 +1,3 @@
-
-
 function slider() {
   $(document).ready(function(){
       $('.customer-logos').slick({
