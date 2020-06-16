@@ -64,3 +64,11 @@
   opacity: 0;
   }
 }
+
+
+
+@media(max-width: 320px){
+  .scroll-down {
+  bottom: 14vh;
+  }
+}

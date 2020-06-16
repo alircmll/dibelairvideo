@@ -8,7 +8,6 @@
   }
   .p-folio{
     text-align: center;
-    // color:#2274A5;
     padding-bottom:30px;
   }
 }
@@ -31,9 +30,9 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 
   @for $i from 1 through 4 {
      @media screen and (max-width:798px - $i*80) {
-        min-width:600px - $i*80;
+        // min-width:600px - $i*80;
         .option:nth-child(#{6-$i}) {
-           display:none;
+           // display:none;
         }
      }
   }
@@ -165,6 +164,13 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
         }
       }
     }
+  }
+}
+
+@media(max-width: 320px){
+  .p-folio{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

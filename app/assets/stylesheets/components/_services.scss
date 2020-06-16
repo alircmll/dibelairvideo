@@ -74,15 +74,23 @@
   }
 }
 
+@media(max-width: 320px){
+  .title-div{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-// .col-serve:hover{
-//   background-color: #444444;
-//   color:white;
-//   transition: all 1s ease;
-// }
+  .col-serve{
+    border-bottom: 0;
+    transition: all 1s ease;
+  }
 
-// .col-serve-btm:hover{
-//   background-color: #444444;
-//   color: white;
-//   transition: all 1s ease;
-// }
+  .line{
+    border-left: 0;
+  }
+
+  .ps{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
