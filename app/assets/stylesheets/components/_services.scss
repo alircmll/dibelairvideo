@@ -1,3 +1,4 @@
+@media(min-width: 1025px){
   .title-div{
     text-align: center;
     height: 50vh;
@@ -11,40 +12,40 @@
     }
   }
 
-.section-services{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 100px;
-  background-color: #fff;
+  .section-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color: #fff;
 
 
-  .container-services{
-     width: 100%;
-     margin: 0 auto;
-
-    .content-services{
-      width: 80%;
+    .container-services{
+      width: 100%;
       margin: 0 auto;
-      padding-top: 55px;
-      padding-bottom: 100px;
 
-      .col-serve{
-        border-bottom: 2px solid #e83f7c;
-        transition: all 1s ease;
-      }
+      .content-services{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 55px;
+        padding-bottom: 100px;
 
-      .col-serve-btm{
-        padding-top: 20px;
-        transition: all 1s ease;
-      }
+        .col-serve{
+          border-bottom: 2px solid rgba(232, 63, 124, 1);
+          transition: all 1s ease;
+        }
 
-      .line{
-        border-left: 2px solid #e83f7c;
-      }
+        .col-serve-btm{
+          padding-top: 20px;
+          transition: all 1s ease;
+        }
 
-      .icon-box{
+        .line{
+          border-left: 2px solid rgba(232, 63, 124, 1);
+        }
+
+        .icon-box{
           display: flex;
           justify-content: center;
           align-items: center;
@@ -54,39 +55,144 @@
             height:60px;
           }
         }
-      .content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align:center;
-        padding: 10px;
-        margin-bottom:20px;
-        margin-top: 40px;
-
+        .content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align:center;
+          padding: 10px;
+          margin-bottom:20px;
+          margin-top: 40px;
+        }
       }
-    }
-    .ps{
-      text-align: center;
-      font-style: italic;
-      padding-bottom: 40px;
+      .ps{
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 40px;
+      }
     }
   }
 }
+
 
 @media(max-width: 320px){
   .title-div{
     padding-left: 10px;
     padding-right: 10px;
+    .title-services{
+      padding-bottom: 30px;
+    }
   }
 
-  .col-serve{
-    border-bottom: 0;
-    transition: all 1s ease;
+  .section-services{
+    .container-services{
+      .content-services{
+        padding-top: 14px;
+
+        .col-serve{
+          border-bottom: 0 !important;
+        }
+
+        .line{
+          border-left: 0 !important;
+        }
+      }
+    }
   }
 
-  .line{
-    border-left: 0;
+  .ps{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media(max-width: 540px){
+  .title-div{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-services{
+    .container-services{
+      .content-services{
+        padding-top: 14px;
+
+        .col-serve{
+          border-bottom: 0 !important;
+        }
+
+        .line{
+          border-left: 0 !important;
+        }
+      }
+    }
+  }
+
+  .ps{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media(max-width: 768px){
+
+  .title-div{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30vh;
+    .title-services{
+      padding-bottom: 30px;
+    }
+  }
+
+  .section-services{
+    .container-services{
+      .content-services{
+        padding-top: 14px;
+
+        .col-serve{
+          // border-bottom: 0 !important;
+        }
+
+        .line{
+          // border-left: 0 !important;
+        }
+      }
+    }
+  }
+
+  .ps{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media(max-width: 1024px){
+   .title-div{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 22vh;
+    .title-services{
+      padding-bottom: 30px;
+    }
+  }
+
+  .section-services{
+    .container-services{
+      .content-services{
+        padding-top: 14px;
+
+        .col-serve{
+          // border-bottom: 0 !important;
+        }
+
+        .line{
+          // border-left: 0 !important;
+        }
+      }
+    }
   }
 
   .ps{
