@@ -13,12 +13,12 @@ Category.destroy_all
 puts "ok"
 puts "creating categories"
 
-wedding = Category.create!(name: 'Mariages', photo:"wedding.jpg" )
-event = Category.create!(name: 'Évènements', photo: "event.jpg" )
-nature = Category.create!(name: 'Nature & Voyages', photo: "nature.jpg" )
-work = Category.create!(name: "Films d'entreprises", photo: "buisness.jpg" )
-clip = Category.create!(name: 'Clips Vidéos', photo: "clip.jpg" )
-sport = Category.create!(name: 'Sports & Divertissements', photo: "sport.jpg")
+wedding = Category.create!(name: 'Mariages', photo:"couple.png", icon: "ring.png" )
+event = Category.create!(name: 'Évènements', photo: "eventC.png", icon: "confetti.png")
+nature = Category.create!(name: 'Nature & Voyages', photo: "voyageC.jpg", icon: "earth.png")
+work = Category.create!(name: "Films d'entreprises", photo: "entrep.png", icon: "case.png")
+clip = Category.create!(name: 'Clips Vidéos', photo: "clip.jpg", icon: "record.png")
+sport = Category.create!(name: 'Sports & Divertissements', photo: "sportC.png", icon: "run.png")
 
 
 

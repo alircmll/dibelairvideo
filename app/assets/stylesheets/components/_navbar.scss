@@ -227,7 +227,7 @@ hr.bottom {
   }
 
   .nav-logo{
-    width: 220px;
+    width: 180px;
   }
 
   .navbar-fixed-top {
@@ -263,8 +263,8 @@ hr.bottom {
 
       a {
         margin: 0 0 0 30px;
-        font-size: 16px;
-        color: black;
+        font-size: 14px;
+        color: white;
         font-family: 'Roboto', sans-serif;
         text-decoration: none;
         position: relative;
@@ -310,46 +310,31 @@ hr.bottom {
     transition:
     padding 0.5s ease;
     text-transform: uppercase;
-    height: 180px;
+    height: 120px;
     width: 100vw;
-    background-color: white;
+    background-color: transparent;
     border: none;
     z-index: 100;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 1s ease, padding 1s ease;
-    transition: height 1s ease;
+    transition: all 0.5s ease;
 
-
-    .navbar-details{
-      img.nav-email{
-        width: 230px;
-        transition: all 1s ease;
-
-      }
-    }
 
 
     &.solid-nav {
       background-color: #fff;
       padding: 5px 50px;
-      height: 100px;
+      height: 70px;
       box-shadow: 1px 2px 11px;
-      transition: background-color 1s ease, padding 1s ease;
-      transition: height 1s ease;
+      transition: all 0.5s ease;
 
-        .navbar-details{
-          img.nav-email{
-            display: none;
-          }
-        }
         a.navbar-brand{
           padding-top: 10px;
           transition: all 1s ease;
 
           .nav-logo{
-            width: 115px;
+            width: 95px;
             transition: all 1s ease;
           }
         }

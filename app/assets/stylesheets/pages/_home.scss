@@ -2,7 +2,7 @@
 
 
 body {
-  background-color: #eee;
+  background-color: #fff;
 
 }
 
@@ -36,3 +36,46 @@ a {
   text-decoration: none !important;
   outline: 0 !important;
 }
+
+// .reveal-holder {
+//   position: relative;
+//   display: inline-block;
+//   overflow: hidden;
+// }
+// .reveal-block {
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   height: 101%;
+//   background: white;
+// }
+// .reveal-block::before {
+//   position: absolute;
+//   content: '';
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: #f3d9dc;
+//   transition-property: transform;
+//   transition-duration: 0.5s;
+// }
+
+// .reveal-block.right::before {
+//   transform: scaleX(0);
+//   transform-origin: 0% 100%;
+// }
+// .reveal-block.right.aos-animate::before {
+//   transform: scaleX(1);
+// }
+
+// [data-aos="reveal-right"] {
+//   transform: scaleX(1);
+//   transform-origin: 100% 0%;
+//   transition-property: transform;
+//   transition-delay: 0.5s;
+// }
+
+// [data-aos="reveal-right"].aos-animate {
+//   transform: scaleX(0);
+// }

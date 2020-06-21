@@ -1,14 +1,19 @@
 <section id="folio" class="section-folio">
-  <h1 class="title-folio">RÉALISATIONS</h1>
+  <div class="title-folio">
+    <div class="reveal-holder">
+      <div class="reveal-block right" data-aos="reveal-right"></div>
+        <h1 >RÉALISATIONS<strong>.</strong></h1>
+    </div>
+  </div>
   <p class="p-folio">Quelques exemples de nos réalisations à découvrir</p>
   <div class="options">
     <% @categories.each do |cat| %>
         <div class="option" style="--optionBackground:url(<%= cat.photo %>);">
           <div class="shadow"></div>
           <div class="label">
-            <!-- <div class="icon">
-              <%#= image_tag('search (1).png', class:"search") %>
-             </div> -->
+            <div class="icon">
+              <%= image_tag(cat.icon, class:"search") %>
+             </div>
              <div class="info">
               <%= link_to category_path(cat), class:"link-card" do  %>
                 <div class="main"><%= cat.name %></div>
