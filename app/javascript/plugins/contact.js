@@ -13,11 +13,11 @@ function formAjax() {
     function success() {
       form.reset();
       button.style = "display: none ";
-      status.innerHTML = "Thanks!";
+      status.innerHTML = "Merci à bientôt!";
     }
 
     function error() {
-      status.innerHTML = "Oops! There was a problem.";
+      status.innerHTML = "Oops! Vérifiez si tout est bien rempli.";
     }
 
     // handle the form submission event

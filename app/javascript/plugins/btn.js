@@ -1,12 +1,12 @@
 const btn = () =>{
   $('.order').click(function(e) {
 
-      let button = $(this);
+      let input = $(this);
 
-      if(!button.hasClass('animate')) {
-          button.addClass('animate');
+      if(!input.hasClass('animate')) {
+          input.addClass('animate');
           setTimeout(() => {
-              button.removeClass('animate');
+              input.removeClass('animate');
           }, 6500);
       }
 

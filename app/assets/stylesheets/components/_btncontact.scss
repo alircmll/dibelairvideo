@@ -1,7 +1,7 @@
 :root {
-  --primary: #275EFE;
-  --primary-dark: #2850C4;
-  --primary-light: #668DFF;
+  --primary: #f3d9dc;
+  --primary-dark: #e83f7c;
+  --primary-light:  #e83f7c;
   --dark: #1C212E;
   --white: #FFF;
   --green: #16BF78;
@@ -29,8 +29,8 @@
     text-align: center;
     top: 19px;
     line-height: 24px;
-    color: var(--dark);
-    font-size: 16px;
+    color: #676C79;
+    font-size: 19px;
     font-weight: 500;
     transform: translateY(var(--y));
     &.default {
@@ -69,9 +69,9 @@
   }
 
   .box {
-    width: 20px;
-    height: 10px;
-    left: 50%;
+    width: 25px;
+    height: 15px;
+    left: 40%;
     margin-left: -10px;
     top: 100%;
     border-radius: 2px;
@@ -102,8 +102,8 @@
     }
   }
   .drone {
-    width: 42px;
-    height: 14px;
+    width: 84px;
+    height: 28px;
     z-index: 1;
     top: 16px;
     right: 100%;
@@ -111,16 +111,16 @@
     svg {
       display: block;
       &.body {
-        width: 42px;
-        height: 14px;
+        width: 84px;
+        height: 28px;
         position: relative;
         z-index: 1;
         color: var(--primary);
       }
       &.wing {
         position: absolute;
-        width: 21px;
-        height: 2px;
+        width: 42px;
+        height: 4px;
         top: 1px;
         color: var(--primary-light);
 
@@ -134,10 +134,10 @@
       }
       &.grab {
         position: absolute;
-        width: 26px;
-        height: 14px;
-        left: 8px;
-        top: 10px;
+        width: 35px;
+        height: 16px;
+        left: 24px;
+        top: 17px;
         color: var(--primary-dark);
         stroke-dashoffset: 34px;
         stroke-dasharray: 0 48px 19px 48px;
