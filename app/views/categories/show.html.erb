@@ -1,4 +1,5 @@
-<% @movies.each do |thing| %>
-<%= thing.name %>
-<% end %>
+<% @movies.each do |movie| %>
 
+<iframe width="560" height="315" src= "<%= movie.yt_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<% end %>
