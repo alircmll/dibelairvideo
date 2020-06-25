@@ -1,5 +1,16 @@
+<div class="categorie">
+  <div class="categorie-title">
+    <h1><%=@category.name %></h1>
+  </div>
+</div>
+
+<div class="row row-movie">
 <% @movies.each do |movie| %>
-
-<iframe width="560" height="315" src= "<%= movie.yt_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+  <div class="col-lg-4">
+    <iframe width="560" height="315" src= "<%= movie.yt_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 <% end %>
+</div>
+
+
+

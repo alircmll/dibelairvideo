@@ -33,6 +33,9 @@ Movie.create!(name: "Films d'entreprises", yt_url:"https://www.youtube.com/embed
 Movie.create!(name: 'Clips Vidéos', yt_url:"https://www.youtube.com/embed/tZTnRF1Gy6Y", category_id: clip.id)
 Movie.create!(name: 'Sports et Divertissements', yt_url:"https://www.youtube.com/embed/tZTnRF1Gy6Y", category_id: sport.id)
 Movie.create!(name: 'Mariages4', yt_url:"https://www.youtube.com/embed/tZTnRF1Gy6Y", category_id: wedding.id)
+Movie.create!(name: 'Mariages3', yt_url:"https://www.youtube.com/embed/tZTnRF1Gy6Y", category_id: wedding.id)
+Movie.create!(name: 'Mariages5', yt_url:"https://www.youtube.com/embed/tZTnRF1Gy6Y", category_id: wedding.id)
+Movie.create!(name: 'Mariages6', yt_url:"https://www.youtube.com/embed/tZTnRF1Gy6Y", category_id: wedding.id)
 
 
 puts "finish"
