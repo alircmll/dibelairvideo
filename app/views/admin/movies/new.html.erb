@@ -1,0 +1,6 @@
+<%= simple_form_for [:admin, @movie] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :yt_url %>
+  <%= f.association :category %>
+  <%= f.button :submit %>
+<% end %>

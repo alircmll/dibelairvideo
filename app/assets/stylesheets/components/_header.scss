@@ -1,5 +1,5 @@
 
-@media(min-width: 1025px){
+// @media(min-width: 1025px){
   // header{
 
   // }
@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 4s ease;
+    // transition: all 4s ease;
 
     .title-header{
       padding-top: 360px;
@@ -33,10 +33,10 @@
 
     }
   }
-  .header-section:hover{
-    transform: scale(1.2);
-  }
-}
+  // .header-section:hover{
+  //   transform: scale(1.2);
+  // }
+// }
 
 
 @media(max-width: 320px) {
