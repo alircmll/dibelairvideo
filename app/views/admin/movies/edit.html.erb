@@ -1,0 +1,23 @@
+
+<div class="container-new">
+
+  <div class="title-new">
+    <h1>Modification</h1>
+  </div>
+  <div class="form-new">
+    <%= simple_form_for [:admin, @movie] do |f| %>
+      <%= f.input :name,
+                  :label => "Titre",
+                    input_html: { :class => 'form-input', :placeholder => "Titre" } %>
+      <%= f.input :yt_url,
+                  :label => "Url Youtube",
+                    input_html: { :class => 'form-input', :placeholder => "url" } %>
+      <%= f.association :category,
+                    :label => "Categorie",
+                    input_html: { :class => 'form-input', :placeholder => "Categorie" } %>
+      <%= f.button :submit,"Enregistrer", :class => "btn" %>
+    <% end %>
+
+  </div>
+</div>
+

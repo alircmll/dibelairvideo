@@ -40,4 +40,9 @@ Movie.create!(name: 'Samantha & Bertrand', yt_url:"https://www.youtube.com/embed
 Movie.create!(name: "Martinique Rallye Tour", yt_url:"https://www.youtube.com/embed/yyR9uJpZkHQ", category_id: event.id)
 Movie.create!(name: "Fruity Cocktail", yt_url:"https://www.youtube.com/embed/W3t_nhuXJbk", category_id: event.id)
 
+
+
+
+
+
 puts "finish"

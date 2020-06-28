@@ -6,7 +6,7 @@ class Admin::MoviesController < ApplicationController
   def create
     @movie = Movie.new(movie_params)
     if @movie.save
-      redirect_to root_path
+      redirect_to root_path, notice: 'Création OK.'
     else
       render :new
     end
@@ -19,12 +19,12 @@ class Admin::MoviesController < ApplicationController
   def update
     @movie = Movie.find(params[:id])
     @movie.update(movie_params)
-    redirect_to root_path, notice: 'Your movie was successfully updated.'
+    redirect_to root_path, notice: 'Modification OK.'
   end
 
   def destroy
     @movie.destroy
-    redirect_to root_path, notice: 'Your movie was successfully deleted.'
+    redirect_to root_path, notice: 'Suppression OK.'
   end
 
   private
