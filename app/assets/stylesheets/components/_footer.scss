@@ -41,55 +41,7 @@
   }
 }
 
-
-@media(max-width: 320px){
-  #footer{
-    background-color: $primary;
-    text-align:center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    margin: 0 auto;
-    .title-footer{
-      h1{
-        font-size: 28px;
-      }
-    }
-    .footer-icon{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .icondiv{
-        padding: 6px;
-
-        .icon{
-          width: 30px;
-        }
-      }
-    }
-  }
-
-  .rights-content{
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50px;
-
-    p{
-      font-size: 12px;
-      font-family: "Roboto", sans-serif;
-      margin: 0;
-    }
-  }
-}
-
-@media(max-width: 540px){
+@media(max-width: 1024px){
   #footer{
     background-color: $primary;
     text-align:center;
@@ -158,7 +110,7 @@
       align-items: center;
 
       .icondiv{
-        padding: 6px;
+        padding: 20px;
 
         .icon{
           width: 30px;
@@ -184,7 +136,8 @@
   }
 }
 
-@media(max-width: 1024px){
+
+@media(max-width: 540px){
   #footer{
     background-color: $primary;
     text-align:center;
@@ -230,3 +183,57 @@
     }
   }
 }
+
+
+
+@media(max-width: 320px){
+  #footer{
+    background-color: $primary;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0 auto;
+    .title-footer{
+      h1{
+        font-size: 23px;
+      }
+    }
+    .footer-icon{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icondiv{
+        padding: 6px;
+
+        .icon{
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  .rights-content{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+
+    p{
+      font-size: 12px;
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+    }
+  }
+}
+
+
+
+
+

@@ -118,11 +118,11 @@
   }
 // }
 
-
-@media(max-width: 320px){
-  .title-div{
+@media(max-width: 1024px){
+   .title-div{
     padding-left: 10px;
     padding-right: 10px;
+    height: 22vh;
     .title-services{
       padding-bottom: 30px;
     }
@@ -134,11 +134,11 @@
         padding-top: 14px;
 
         .col-serve{
-          border-bottom: 0 !important;
+          // border-bottom: 0 !important;
         }
 
         .line{
-          border-left: 0 !important;
+          // border-left: 0 !important;
         }
       }
     }
@@ -149,35 +149,6 @@
     padding-right: 10px;
   }
 }
-
-@media(max-width: 540px){
-  .title-div{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .section-services{
-    .container-services{
-      .content-services{
-        padding-top: 14px;
-
-        .col-serve{
-          border-bottom: 0 !important;
-        }
-
-        .line{
-          border-left: 0 !important;
-        }
-      }
-    }
-  }
-
-  .ps{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 
 @media(max-width: 768px){
 
@@ -212,14 +183,13 @@
   }
 }
 
-@media(max-width: 1024px){
-   .title-div{
+
+
+
+@media(max-width: 540px){
+  .title-div{
     padding-left: 10px;
     padding-right: 10px;
-    height: 22vh;
-    .title-services{
-      padding-bottom: 30px;
-    }
   }
 
   .section-services{
@@ -228,11 +198,11 @@
         padding-top: 14px;
 
         .col-serve{
-          // border-bottom: 0 !important;
+          border-bottom: 0 !important;
         }
 
         .line{
-          // border-left: 0 !important;
+          border-left: 0 !important;
         }
       }
     }
@@ -243,3 +213,41 @@
     padding-right: 10px;
   }
 }
+
+
+@media(max-width: 320px){
+  .title-div{
+    padding-left: 10px;
+    padding-right: 10px;
+    .sub-services {
+      margin-top: 15px;
+    }
+    .title-services{
+      padding-bottom: 30px;
+    }
+  }
+
+  .section-services{
+    padding-bottom: 50px;
+    .container-services{
+      .content-services{
+        padding-top: 14px;
+
+        .col-serve{
+          border-bottom: 0 !important;
+        }
+
+        .line{
+          border-left: 0 !important;
+        }
+      }
+    }
+  }
+
+  .ps{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
