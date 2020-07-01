@@ -146,6 +146,26 @@ a.effect-underline:hover:after {
     width: 200px;
   }
 
+  .navbar .solid-nav{
+    background-color: #fff;
+    padding: 5px 50px;
+    height: 70px;
+    box-shadow: 1px 2px 11px;
+    transition: all 0.5s ease;
+    #dotsMenu{
+      cursor: pointer;
+      font-size: 20px;
+      width: 76px;
+      height: 51px;
+      padding: 0;
+      top: 1px;
+      left: 17px;
+
+      img.open-menu{
+        width: 35px;
+      }
+    }
+  }
   #dotsMenu{
     cursor: pointer;
     font-size: 20px;
@@ -168,6 +188,27 @@ a.effect-underline:hover:after {
   }
   .nav-logo{
     width: 145px;
+  }
+
+  .navbar .solid-nav{
+    background-color: #fff;
+    padding: 5px 50px;
+    height: 70px;
+    box-shadow: 1px 2px 11px;
+    transition: all 0.5s ease;
+    #dotsMenu{
+      cursor: pointer;
+      font-size: 20px;
+      width: 76px;
+      height: 51px;
+      padding: 0;
+      top: 1px;
+      left: 17px;
+
+      img.open-menu{
+        width: 35px;
+      }
+    }
   }
 
   #dotsMenu{
@@ -195,17 +236,37 @@ a.effect-underline:hover:after {
     width: 145px;
   }
 
+  .navbar .solid-nav{
+    background-color: #fff;
+    padding: 5px 50px;
+    height: 70px;
+    box-shadow: 1px 2px 11px;
+    transition: all 0.5s ease;
+    #dotsMenu{
+      cursor: pointer;
+      font-size: 20px;
+      width: 76px;
+      height: 51px;
+      padding: 0;
+      top: -26px;
+      left: 185px;
+
+      img.open-menu{
+        width: 35px;
+      }
+    }
+  }
   #dotsMenu{
     cursor: pointer;
     font-size: 20px;
     width: 76px;
     height: 51px;
     padding: 0;
-    top: -26px;
-    left: 185px;
+    top: 6px;
+    left: 17px;
 
     img.open-menu{
-      width: 35px;
+      width: 26px;
     }
   }
 }
@@ -252,7 +313,7 @@ $pix-size: 6px; // <---- Definir la taille du menu
     width: 76px;
     height: 51px;
     padding: 0;
-    top: -3px;
+    top: 2px;
     right: -9px;
 
     img.open-menu {
@@ -361,7 +422,7 @@ li.footer-menu {
 
   a {
     img.social-icon {
-      width: 59%;
+      width: 40%;
     }
   }
 }
@@ -370,12 +431,12 @@ li.footer-menu {
 // SEPARATIONS
 
 hr.top {
-  border: 1px #54BCB6 solid;
+  border: 1px $primary solid;
   width: 100%;
 }
 
 hr.bottom {
-  border: 1px #54BCB6 solid;
+  border: 1px $primary solid;
   width: 100%;
 }
 
@@ -415,19 +476,21 @@ hr.bottom {
   .menu-item {
     font-size: 16px;
     font-weight: bold;
-    // font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1em;
   }
 
   // COULEURS MENU
-  // a {
-  //   font-weight: 300;
-  //   letter-spacing: 0em;
-  //   transition: all 300ms ease;
-  //   // line-height: 0px;
-  //   text-decoration: none;
-  //   color: white;
+  a {
+    font-weight: 300;
+    letter-spacing: 0em;
+    transition: all 300ms ease;
+    // line-height: 0px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 
+  }
   //   &:hover {
   //     color: white;
   //     transition: ease 300ms;

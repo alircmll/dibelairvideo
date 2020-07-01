@@ -60,6 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 65px;
     padding-bottom: 100px;
     background-color: #fff;
 
@@ -156,6 +157,9 @@
     padding-left: 10px;
     padding-right: 10px;
     height: 30vh;
+    .sub-services {
+      margin-top: 15px;
+    }
     .title-services{
       padding-bottom: 30px;
     }
@@ -190,12 +194,19 @@
   .title-div{
     padding-left: 10px;
     padding-right: 10px;
+    .sub-services {
+      margin-top: 15px;
+    }
   }
 
   .section-services{
+    padding-top: 65px;
+    padding-bottom: 44px;
     .container-services{
       .content-services{
         padding-top: 14px;
+        padding-bottom: 44px;
+
 
         .col-serve{
           border-bottom: 0 !important;
@@ -228,7 +239,7 @@
   }
 
   .section-services{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     .container-services{
       .content-services{
         padding-top: 14px;

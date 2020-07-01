@@ -11,7 +11,6 @@
       <li><a href="#services" class="effect-underline">Services</a></li>
       <li><a href="#folio" class="effect-underline">Portfolio</a></li>
       <li><a href="#about" class="effect-underline">À propos</a></li>
-      <!-- <li><a href="#tab-react" class="effect-underline">Outils</a></li> -->
       <li><a href="#contact" class="effect-underline">Contact</a></li>
     </ul>
   </div>
@@ -36,22 +35,22 @@
         <%# LIST %>
 
         <hr class="top">
-
-            <%#= link_to "Accueil", root_path, class: "nav-link list-group-item menu-item", class: is_active?("home") %>
-            <%#= link_to "Formations", formations_path, class: "nav-link list-group-item menu-item", class: is_active?("formations") %>
-            <%#= link_to "Le Blog", articles_path, class: "nav-link list-group-item menu-item", class: is_active?("articles") %>
-            <%#= link_to "À propos", pages_about_path, class: "nav-link list-group-item menu-item", class: is_active?("about") %>
-            <%#= link_to "Contact", pages_contact_path, class: "nav-link list-group-item menu-item", class: is_active?("contact") %>
-
+              <a href="#header" class="nav-link list-group-item menu-item">Accueil</a>
+              <a href="#services" class="nav-link list-group-item menu-item">Services</a>
+              <a href="#folio" class="nav-link list-group-item menu-item">Portfolio</a>
+              <a href="#about" class="nav-link list-group-item menu-item">À propos</a>
+              <a href="#contact" class="nav-link list-group-item menu-item">Contact</a>
 
         <%# MENU PROFIL / LOG OUT START %>
         <hr class="bottom">
 
         <li class="footer-menu list-inline ">
           <div class="d-flex justify-content-center">
-              <a href="https://www.facebook.com/Wkerautret/" target="_blank"><%#= image_tag 'icone-facebook.png', class: "social-icon"%></a>
-              <a href="https://www.youtube.com/channel/UC2c_l9vLefW82NbaUeqy6dA/featured" target="_blank"><%#= image_tag 'icone-youtube.png', class: "social-icon"%></a>
-              <a href="https://www.instagram.com/will_le_mono/" target="_blank"><%#= image_tag 'icone-instagram.png', class: "social-icon"%></a>
+              <a href="https://www.youtube.com/channel/UCvhSt-lF8srbLr7BgJxmcjA" target="_blank"><%= image_tag 'youtube.png', class: "social-icon"%></a>
+              <a href="https://www.facebook.com/dibelairvideo/" target="_blank"><%= image_tag 'facebook.png', class: "social-icon"%></a>
+              <a href="https://instagram.com/dibelairvideo?igshid=179vo6sdb0agu" target="_blank"><%= image_tag 'instagram.png', class: "social-icon"%></a>
+              <a href="https://vm.tiktok.com/Je9eDDU/" target="_blank"><%= image_tag 'tik-tok.png', class: "social-icon"%></a>
+
           </div>
         </li>
         <%# MENU PROFIL / LOG OUT END %>
