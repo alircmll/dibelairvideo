@@ -10,6 +10,7 @@ import { slider } from "../plugins/slider.js"
 import { folio } from "../plugins/folio.js"
 import { btn } from "../plugins/btn.js"
 import { preLoader } from "../plugins/preloader.js"
+import { scrollUp } from "../plugins/scroll.js"
 
 
 formAjax();
@@ -17,6 +18,7 @@ slider();
 folio();
 btn();
 preLoader();
+scrollUp();
 new WOW().init();
 
 

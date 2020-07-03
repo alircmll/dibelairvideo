@@ -17,12 +17,18 @@
 
     .icondiv{
       padding: 25px;
-
+      transition: transform .5s;
       .icon{
         width: 30px;
       }
     }
   }
+}
+
+.icondiv:hover{
+  transform: scale(1.5);
+  transition: transform .5s;
+
 }
 
 .rights-content{
@@ -40,6 +46,8 @@
     margin: 0;
   }
 }
+
+
 
 @media(max-width: 1024px){
   #footer{

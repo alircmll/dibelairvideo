@@ -45,6 +45,17 @@
   li {
     display: inline;
 
+    button.btn-sign-out {
+      background-color: transparent;
+      border: none;
+      margin-left: 3rem;
+      outline: none;
+
+      img.nav-logout {
+        width: 30px;
+      }
+    }
+
     a {
       margin: 0 0 0 30px;
       font-size: 14px;

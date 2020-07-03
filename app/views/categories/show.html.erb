@@ -1,4 +1,4 @@
-<%= render "shared/navbar" %>
+<%= render "shared/navcat" %>
 <!-- <div class="categorie"> -->
   <section id="movies" class="section-movies">
     <div class="categorie-title">
@@ -11,8 +11,8 @@
       <div class="content-movie">
         <div class="row row-movie">
           <% @movies.each do |movie| %>
-            <div class="col-12 col-md-6 col-movie">
-              <iframe width="560" height="315" src= "<%= movie.yt_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-md-12 col-movie">
+              <iframe src= "<%= movie.yt_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <h3><%= movie.name %></h3>
              <!--  <%# if current_user.admin == true %>
                 <%#= link_to "Modifier", edit_admin_movie_path(movie.id)  %>

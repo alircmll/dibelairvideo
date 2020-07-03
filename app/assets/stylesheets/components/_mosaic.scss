@@ -13,6 +13,39 @@
 
 .col-movie{
   text-align: center;
-  padding-bottom: 70px;
+  padding: 0px;
+  // width: 100vw;
+  margin-bottom: 100px;
 }
 
+.row-movie{
+  width: 100vw;
+  margin: 0 auto;
+}
+
+iframe{
+  width: 50%;
+  height:410px;
+}
+
+
+@media(max-width: 768px){
+  iframe{
+    width: 67%;
+    height:420px;
+  }
+}
+
+@media(max-width: 540px){
+  iframe{
+    width: 80%;
+    height:350px;
+  }
+}
+
+@media(max-width: 320px){
+  iframe{
+    width: 80%;
+    height: 230px;
+  }
+}
