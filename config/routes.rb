@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :admins
   # devise_for :users
   root to: 'pages#home'
+  get 'pages/mentions_legales'
   resources :categories, only: [:show]
   # resources :users, only: [:new, :create]
 

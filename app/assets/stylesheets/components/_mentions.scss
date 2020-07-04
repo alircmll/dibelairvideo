@@ -1,0 +1,117 @@
+#mentions-legales {
+  background-color: #0A0E12;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  padding-top: 210px;
+
+  .container-mentions-legales {
+    max-width: 85vw;
+    margin: 0 auto;
+    // padding-bottom: 100px;
+
+    .trapezoids {
+      padding-bottom: 100px;
+
+      @media (min-width: 769px) {
+        .trapezoid-blue {
+          width: 0;
+          height: 70px;
+          border-top: 18px solid transparent;
+          border-right: 245px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -6px;
+            left: 21px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .trapezoid-blue {
+          width: 0;
+          height: 60px;
+          border-top: 18px solid transparent;
+          border-right: 206px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -6px;
+            left: 17px;
+            white-space: nowrap;
+            font-size: 34px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .container-title {
+      padding-bottom: 15px;
+      h2 {
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+
+        span.blue {
+          color: #54BCB6;
+        }
+      }
+    }
+
+    .container-global-mentions-legales {
+      padding-bottom: 100px;
+
+      p {
+        text-align: justify;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .list-mentions-legales {
+        padding-left: 17px;
+
+        li {
+          text-align: justify;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+
+          a {
+            color: #EC6B1B;
+            text-decoration: none;
+            transition: font-weight 0.4s ease 0s;
+
+            &:hover {
+              font-weight: bold;
+              transition: font-weight 0.4s ease 0s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .trapezoids {
+  // padding-bottom: 30px;
+
+    .trapezoid-blue {
+      margin: 0 auto;
+    }
+
+    .trapezoid-orange {
+      margin: 0 auto;
+    }
+  }
+}
