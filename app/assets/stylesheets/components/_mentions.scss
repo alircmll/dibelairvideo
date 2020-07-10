@@ -1,5 +1,5 @@
 #mentions-legales {
-  background-color: #0A0E12;
+  background-color: #fff;
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -14,11 +14,11 @@
       padding-bottom: 100px;
 
       @media (min-width: 769px) {
-        .trapezoid-blue {
+        .trapezoid-pink {
           width: 0;
           height: 70px;
           border-top: 18px solid transparent;
-          border-right: 245px solid #54BCB6;
+          border-right: 406px solid $primary;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
@@ -34,7 +34,7 @@
       }
 
       @media (max-width: 768px) {
-        .trapezoid-blue {
+        .trapezoid-pink {
           width: 0;
           height: 60px;
           border-top: 18px solid transparent;
@@ -61,8 +61,8 @@
         font-weight: bold;
         text-align: center;
 
-        span.blue {
-          color: #54BCB6;
+        span.pink {
+          color: $primary;
         }
       }
     }
@@ -106,7 +106,7 @@
   .trapezoids {
   // padding-bottom: 30px;
 
-    .trapezoid-blue {
+    .trapezoid-pink {
       margin: 0 auto;
     }
 
