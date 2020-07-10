@@ -1,5 +1,5 @@
 class Admin::MoviesController < ApplicationController
-  # before_action :authenticate_admin!
+   # before_action :authenticate_admin!
   def new
     @movie = Movie.new
   end
@@ -29,6 +29,11 @@ class Admin::MoviesController < ApplicationController
   end
 
   private
+
+
+  # def find_movie
+  #   @movie = Movie.find(params[:id])
+  # end
 
   def movie_params
     params.require(:movie).permit(:name, :yt_url, :category_id)

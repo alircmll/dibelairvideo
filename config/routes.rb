@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  # devise_for :users
+   devise_for :admins
+   # devise_for :users
   root to: 'pages#home'
   get 'pages/mentions_legales'
   resources :categories, only: [:show]
-  # resources :users, only: [:new, :create]
+   resources :users, only: [:new, :create]
 
   namespace :admin do
     resources :categories, only: [:new, :create, :edit, :update, :destroy]
