@@ -44,9 +44,29 @@
     font-size: 12px;
     font-family: "Roboto", sans-serif;
     margin: 0;
+
   }
 }
 
+.link-footer{
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: black;
+}
+
+.rights{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.realised{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media(max-width: 1024px){

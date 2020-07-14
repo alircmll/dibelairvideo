@@ -277,6 +277,11 @@
         background-size: cover;
         background-position: center;
         background-repeat: none;
+
+        .label {
+          bottom:15px;
+          left:20px;
+        }
       }
 
       &:not(.active) {

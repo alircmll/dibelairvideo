@@ -17,7 +17,6 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'jquery-rails'
 gem "jquery-slick-rails"
-gem 'compass-rails'
 gem 'sprockets-rails'
 gem 'friendly_id', '~> 5.2.4'
 
