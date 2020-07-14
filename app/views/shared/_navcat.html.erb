@@ -8,10 +8,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="list-nav">
       <li><%= link_to "Acceuil",root_path, class:"effect-underline"%></li>
-      <li><%= link_to "Acceuil",root_path, class:"effect-underline"%></li>
-      <li><%= link_to "Acceuil",root_path, class:"effect-underline"%></li>
-      <li><%= link_to "Acceuil",root_path, class:"effect-underline"%></li>
-      <li><%= link_to "Acceuil",root_path, class:"effect-underline"%></li>
+      <li><%= link_to "Services",root_path, class:"effect-underline"%></li>
+      <li><%= link_to "Portfolio",root_path, class:"effect-underline"%></li>
+      <li><%= link_to "À Propos",root_path, class:"effect-underline"%></li>
+      <li><%= link_to "Contact",root_path, class:"effect-underline"%></li>
       <li>
         <% if admin_signed_in? %>
           <%= link_to destroy_admin_session_path, class: "logout", method: :delete do %>
@@ -35,37 +35,31 @@
   <a id="dotsMenuClose" class="btn menu active" data-target="#modalNavigation" data-toggle="modal" aria-label="Close" class="close" data-dismiss="modal">
     <%= image_tag 'error.png', class: "close-menu"%>
   </a>
-
-
   <%# MODAL %>
   <div class="modal-dialog">
     <div class="modal-content" role="document">
-
       <ul id="menuModal" class="list-group text-center">
         <%# LIST %>
-
         <hr class="top">
-              <a href="#header" class="nav-link list-group-item menu-item">Accueil</a>
-              <a href="#services" class="nav-link list-group-item menu-item">Services</a>
-              <a href="#folio" class="nav-link list-group-item menu-item">Portfolio</a>
-              <a href="#about" class="nav-link list-group-item menu-item">À propos</a>
-              <a href="#contact" class="nav-link list-group-item menu-item">Contact</a>
+          <%= link_to "Acceuil",root_path, class:"nav-link list-group-item menu-item"%>
+          <%= link_to "Services",root_path, class:"nav-link list-group-item menu-item"%>
+          <%= link_to "Portfolio",root_path, class:"nav-link list-group-item menu-item"%>
+          <%= link_to "À Propos",root_path, class:"nav-link list-group-item menu-item"%>
+          <%= link_to "Contact",root_path, class:"nav-link list-group-item menu-item"%>
 
         <%# MENU PROFIL / LOG OUT START %>
         <hr class="bottom">
 
         <li class="footer-menu list-inline ">
           <div class="d-flex justify-content-center">
-              <a href="https://www.youtube.com/channel/UCvhSt-lF8srbLr7BgJxmcjA" target="_blank"><%= image_tag 'youtube.png', class: "social-icon"%></a>
-              <a href="https://www.facebook.com/dibelairvideo/" target="_blank"><%= image_tag 'facebook.png', class: "social-icon"%></a>
-              <a href="https://instagram.com/dibelairvideo?igshid=179vo6sdb0agu" target="_blank"><%= image_tag 'instagram.png', class: "social-icon"%></a>
-              <a href="https://vm.tiktok.com/Je9eDDU/" target="_blank"><%= image_tag 'tik-tok.png', class: "social-icon"%></a>
-
+            <a href="https://www.youtube.com/channel/UCvhSt-lF8srbLr7BgJxmcjA" target="_blank"><%= image_tag 'youtube.png', class: "social-icon"%></a>
+            <a href="https://www.facebook.com/dibelairvideo/" target="_blank"><%= image_tag 'facebook.png', class: "social-icon"%></a>
+            <a href="https://instagram.com/dibelairvideo?igshid=179vo6sdb0agu" target="_blank"><%= image_tag 'instagram.png', class: "social-icon"%></a>
+            <a href="https://vm.tiktok.com/Je9eDDU/" target="_blank"><%= image_tag 'tik-tok.png', class: "social-icon"%></a>
           </div>
         </li>
         <%# MENU PROFIL / LOG OUT END %>
       </ul>
-
     </div>
   </div>
 </div>

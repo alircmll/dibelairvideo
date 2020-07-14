@@ -43,14 +43,13 @@
 
       <ul id="menuModal" class="list-group text-center">
         <%# LIST %>
-
+          <h2 class="modal-title">Portfolio</h2>
         <hr class="top">
-              <a href="#header" class="nav-link list-group-item menu-item">Accueil</a>
-              <a href="#services" class="nav-link list-group-item menu-item">Services</a>
-              <a href="#folio" class="nav-link list-group-item menu-item">Portfolio</a>
-              <a href="#about" class="nav-link list-group-item menu-item">À propos</a>
-              <a href="#contact" class="nav-link list-group-item menu-item">Contact</a>
-
+              <% @categories.each do |cat| %>
+                <%= link_to category_path(cat), class:"nav-link list-group-item menu-item" do  %>
+                  <div><%= cat.name %></div>
+                <% end %>
+              <% end %>
         <%# MENU PROFIL / LOG OUT START %>
         <hr class="bottom">
 
