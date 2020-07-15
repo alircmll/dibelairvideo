@@ -230,11 +230,21 @@
         background-size: cover;
         background-position: center;
         background-repeat: none;
+
+        .label {
+          bottom:10px;
+          left:10px;
+        }
       }
 
       &:not(.active) {
         flex-grow:1;
         border-radius:30px;
+
+        .label {
+          bottom:10px;
+          left:10px;
+        }
       }
     }
   }
@@ -268,8 +278,8 @@
         background-repeat: none;
 
         .label {
-          bottom:15px;
-          left:20px;
+          bottom:10px;
+          left:10px;
         }
       }
 
@@ -311,7 +321,7 @@
         background-position: center;
         background-repeat: none;
         .label {
-          bottom: 4px;
+          bottom: 2px;
           left: 10px;
         }
       }
