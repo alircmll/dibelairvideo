@@ -11,7 +11,8 @@
   <p class="p-folio">Quelques exemples de nos réalisations à découvrir</p>
   <div class="options">
     <% @categories.each do |cat| %>
-        <div class="option" style="--optionBackground:url(<%= cat.photo %>);">
+      <div class="option" style="background-image:url(<%= image_path cat.photo %>)">
+        <!-- <div class="option" style="--optionBackground:url(<%= cat.photo %>);"> -->
           <div class="label">
             <div class="icon">
               <%= image_tag(cat.icon, class:"search") %>
