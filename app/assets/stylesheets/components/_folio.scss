@@ -291,6 +291,10 @@
         font-weight: bold;
         font-size: 1rem;
       }
+
+      .label .icon {
+        display:none;
+      }
     }
   }
 }
@@ -337,6 +341,9 @@
       .label .info a.link-card .main {
         font-weight: bold;
         font-size: 14px;
+      }
+      .label .icon {
+        display:none;
       }
     }
   }
