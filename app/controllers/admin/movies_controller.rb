@@ -1,5 +1,4 @@
 class Admin::MoviesController < ApplicationController
-  # before_action :authenticate_admin!
   def new
     @movie = Movie.new
   end
