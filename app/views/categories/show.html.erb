@@ -14,9 +14,9 @@
             <div class="col-md-12 col-movie">
               <iframe src= "<%= movie.yt_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <h3><%= movie.name %></h3>
-             <!--  <%# if current_user.admin == true %>
-                <%#= link_to "Modifier", edit_admin_movie_path(movie.id)  %>
-              <#% end %> -->
+             <%  if user_signed_in? && current_user.admin == true %>
+                <%= link_to "Modifier", edit_admin_movie_path(movie.id)  %>
+              <% end %>
             </div>
           <% end %>
         </div>

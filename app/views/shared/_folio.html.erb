@@ -3,9 +3,9 @@
     <div class="reveal-holder">
       <div class="reveal-block right" data-aos="reveal-right"></div>
         <h1 >RÉALISATIONS<strong>.</strong></h1>
-        <%# if current_user.admin == true %>
-          <%#= link_to " + Ajouter un film", new_admin_movie_path %>
-        <%# end %>
+          <% if user_signed_in? && current_user.admin == true %>
+          <%= link_to " + Ajouter un film", new_admin_movie_path %>
+        <% end %>
     </div>
   </div>
   <p class="p-folio">Quelques exemples de nos réalisations à découvrir</p>

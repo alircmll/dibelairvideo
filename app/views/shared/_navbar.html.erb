@@ -13,8 +13,8 @@
       <li><a href="#about" class="effect-underline">À propos</a></li>
       <li><a href="#contact" class="effect-underline">Contact</a></li>
       <li>
-        <% if admin_signed_in? %>
-          <%= link_to destroy_admin_session_path, class: "logout", method: :delete do %>
+        <% if user_signed_in? %>
+          <%= link_to destroy_user_session_path, class: "logout", method: :delete do %>
             <button class="btn-sign-out">
               <%= image_tag 'logout.png', class: "nav-logout"%>
             </button>
